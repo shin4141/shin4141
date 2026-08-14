@@ -18,7 +18,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public)
 - [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit)
-- [Decision-OS V12 Completion Integrity](https://github.com/shin4141/decision-os-v12-completion-integrity)
+- [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
 
 Focus: local success does not necessarily prove the protected outcome is final — authority, durable state, retries, external effects, restartability, and AI-agent control.
 
