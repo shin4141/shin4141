@@ -4,15 +4,13 @@ Independent researcher working on AI systems, boundary integrity, and Decision-O
 
 ## External OSS trust proof
 
-**3 independent upstream merges**
+**5 independent upstream merges**
 
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — **MERGED**
-
-Additional substantive human review:
-
-- [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — maintainer review completed, requested changes addressed, re-review pending
+- [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — **MERGED**
+- [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — maintainer independently reproduced the failure, requested two repairs, re-verified the corrected behavior with real `EACCES`, then **MERGED**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
