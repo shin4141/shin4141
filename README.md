@@ -10,7 +10,7 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 ## External OSS trust proof
 
-**9 direct upstream merges across 8 independent public repositories**
+**10 direct upstream merges across 9 independent public repositories**
 
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
@@ -21,6 +21,7 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 - [RNAlysis #289](https://github.com/GuyTeichman/RNAlysis/pull/289) — incomplete R-package installation cannot silently continue as if required packages are available → **MERGED**
 - [Job Autofill #221](https://github.com/ritsth/job-autofill-extension/pull/221) — company detection falls back to trimmed image alt text when visible text is absent; visible text retains priority; blank alt values preserve selector fallthrough → **MERGED**
+- [bmad-loop #587](https://github.com/bmad-code-org/bmad-loop/pull/587) — strict `limits.*` scalar validation prevents quoted or wrong-type TOML values from silently changing policy meaning → **MERGED**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
