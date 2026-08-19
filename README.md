@@ -10,9 +10,9 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 ## External OSS trust proof
 
-**13 direct upstream merges across 10 independent public repositories**
+**15 direct upstream merges across 11 independent public repositories**
 
-![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×2](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-2-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×1](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-1-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×1](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-1-cf222e?style=flat-square&labelColor=cf222e)
 
 ![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb)
 
@@ -27,10 +27,12 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [Job Autofill #215](https://github.com/ritsth/job-autofill-extension/pull/215) — preserve known metadata when blank inputs would otherwise overwrite it → **MERGED**
 - [Job Autofill #221](https://github.com/ritsth/job-autofill-extension/pull/221) — company detection falls back to trimmed image alt text when visible text is absent; visible text retains priority; blank alt values preserve selector fallthrough → **MERGED**
 
-![CONFIG / POLICY ×2](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-2-9a6700?style=flat-square&labelColor=9a6700)
+![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700)
 
 - [bmad-loop #587](https://github.com/bmad-code-org/bmad-loop/pull/587) — strict `limits.*` scalar validation prevents quoted or wrong-type TOML values from silently changing policy meaning → **MERGED**
 - [makoto2 #94](https://github.com/pooza/makoto2/pull/94) — service URLs preserve their HTTP(S)-only contract by rejecting misspelled or non-HTTP(S) schemes during configuration validation → **MERGED**
+- [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**
+- [Rosetta #285](https://github.com/griddynamics/rosetta/pull/285) — plan writes reject empty, whitespace-only, and non-string names through shared validation while preserving omitted-name defaults → **MERGED**
 
 ![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37)
 
@@ -57,6 +59,7 @@ These are submitted but not yet counted as merged proof:
 - [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — materialized state + source-of-truth event atomicity
 - [Cerbos #3328](https://github.com/cerbos/cerbos/pull/3328) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — accepted policy mutation != current valid authority chain
 - [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — correlated payment evidence != independent financial transitions
+- [KaotoIO camel-catalog #130](https://github.com/KaotoIO/camel-catalog/pull/130) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — aggregate catalog handler failures propagate instead of being silently swallowed, preserving the original failure cause
 
 ## Current work
 
