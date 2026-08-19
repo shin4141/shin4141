@@ -12,6 +12,8 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 **13 direct upstream merges across 10 independent public repositories**
 
+![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×2](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-2-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×1](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-1-cf222e?style=flat-square&labelColor=cf222e)
+
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
