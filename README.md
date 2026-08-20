@@ -10,9 +10,13 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 ## External OSS trust proof
 
-**15 direct upstream merges across 11 independent public repositories**
+### Featured upstream merge
 
-![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×1](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-1-cf222e?style=flat-square&labelColor=cf222e)
+> **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939)** — duplicate generated schema-name collisions now produce a deterministic diagnostic instead of crashing the generator; regression coverage included → **MERGED**
+
+**17 direct upstream merges across 13 independent public repositories**
+
+![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×2](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-2-cf222e?style=flat-square&labelColor=cf222e)
 
 ![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb)
 
@@ -34,9 +38,10 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**
 - [Rosetta #285](https://github.com/griddynamics/rosetta/pull/285) — plan writes reject empty, whitespace-only, and non-string names through shared validation while preserving omitted-name defaults → **MERGED**
 
-![RETRY / RECOVERY ×1](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-1-1a7f37?style=flat-square&labelColor=1a7f37)
+![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37)
 
 - [Weftmap #178](https://github.com/DataDave-Dev/weftmap/pull/178) — a failed tree-sitter initialization remains a failure for the current caller while clearing the cached promise so a later request can retry → **MERGED**
+- [Python Code Health Analyzer #19](https://github.com/Johnkothapalli/python-code-health-analyzer/pull/19) — malformed cached reports recover as cache misses without swallowing SQLite operational failures, then repopulate with valid analysis state → **MERGED**
 
 ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00)
 
@@ -46,8 +51,9 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-![NUMERIC / REPRESENTATION ×1](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-1-cf222e?style=flat-square&labelColor=cf222e)
+![NUMERIC / REPRESENTATION ×2](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-2-cf222e?style=flat-square&labelColor=cf222e)
 
+- [Apple swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — duplicate generated schema names fail with a deterministic diagnostic instead of crashing during recursive-type boxing → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
