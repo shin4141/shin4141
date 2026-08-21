@@ -10,13 +10,15 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 ## External OSS trust proof
 
-### Featured upstream merge
+### Featured upstream merges
 
 > **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939)** — duplicate generated schema-name collisions now produce a deterministic diagnostic instead of crashing the generator; regression coverage included → **MERGED**
 
-**17 direct upstream merges across 13 independent public repositories**
+> **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520)** — invalid Node interface port IDs now fall back to the existing schema-valid representation; maintainer review drove regex-based validation and expanded malformed-input coverage before merge → **MERGED**
 
-![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×2](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-2-cf222e?style=flat-square&labelColor=cf222e)
+**19 direct upstream merges across 15 independent public repositories**
+
+![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
 
 ![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb)
 
@@ -25,11 +27,12 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — process-state truth / permission handling; maintainer reproduced the failure and re-verified the repair with real `EACCES` → **MERGED**
 - [Codesema #32](https://github.com/getCodesema/codesema-cli/pull/32) — renamed and copied preview entries retain the destination path used for later status and diff lookup → **MERGED**
 
-![DATA / CONTEXT ×3](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-3-8250df?style=flat-square&labelColor=8250df)
+![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df)
 
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
 - [Job Autofill #215](https://github.com/ritsth/job-autofill-extension/pull/215) — preserve known metadata when blank inputs would otherwise overwrite it → **MERGED**
 - [Job Autofill #221](https://github.com/ritsth/job-autofill-extension/pull/221) — company detection falls back to trimmed image alt text when visible text is absent; visible text retains priority; blank alt values preserve selector fallthrough → **MERGED**
+- [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 
 ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700)
 
@@ -51,9 +54,10 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-![NUMERIC / REPRESENTATION ×2](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-2-cf222e?style=flat-square&labelColor=cf222e)
+![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
 
 - [Apple swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — duplicate generated schema names fail with a deterministic diagnostic instead of crashing during recursive-type boxing → **MERGED**
+- [Sony nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — invalid Node interface port IDs fall back to the existing schema-valid null address; maintainer review requested repository-native regex validation and expanded malformed-input coverage before merge → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
