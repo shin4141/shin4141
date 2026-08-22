@@ -16,17 +16,20 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 > **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520)** — invalid Node interface port IDs now fall back to the existing schema-valid representation; maintainer review drove regex-based validation and expanded malformed-input coverage before merge → **MERGED**
 
-**21 direct upstream merges across 17 independent public repositories**
+> **[Vercel / workflow #3575](https://github.com/vercel/workflow/pull/3575)** — step creation now commits the materialized step row and its matching replay event atomically, while preserving recovery for pre-existing orphan rows → **MERGED**
 
-![STATE / TRANSITION ×5](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-5-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
+**22 direct upstream merges across 18 independent public repositories**
 
-![STATE / TRANSITION ×5](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-5-1f6feb?style=flat-square&labelColor=1f6feb)
+![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
+
+![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb)
 
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — stale graph and error invalidation across workspace context changes → **MERGED**
 - [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — process-state truth / permission handling; maintainer reproduced the failure and re-verified the repair with real `EACCES` → **MERGED**
 - [Codesema #32](https://github.com/getCodesema/codesema-cli/pull/32) — renamed and copied preview entries retain the destination path used for later status and diff lookup → **MERGED**
 - [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — terminal payment evidence is counted once so fully captured/refunded collections do not collapse into false partial states → **MERGED**
+- [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — the step entity and matching `step_created` event now commit atomically, while old partial-write orphans can still be drained without losing replay history → **MERGED**
 
 ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df)
 
@@ -63,12 +66,6 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
-
-## Current open repair work
-
-These are submitted but not yet counted as merged proof:
-
-- [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — materialized state + source-of-truth event atomicity
 
 ## Current work
 
