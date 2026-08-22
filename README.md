@@ -16,16 +16,17 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 > **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520)** — invalid Node interface port IDs now fall back to the existing schema-valid representation; maintainer review drove regex-based validation and expanded malformed-input coverage before merge → **MERGED**
 
-**19 direct upstream merges across 15 independent public repositories**
+**21 direct upstream merges across 17 independent public repositories**
 
-![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×5](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-5-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×4](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-4-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
 
-![STATE / TRANSITION ×4](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-4-1f6feb?style=flat-square&labelColor=1f6feb)
+![STATE / TRANSITION ×5](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-5-1f6feb?style=flat-square&labelColor=1f6feb)
 
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — stale graph and error invalidation across workspace context changes → **MERGED**
 - [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — process-state truth / permission handling; maintainer reproduced the failure and re-verified the repair with real `EACCES` → **MERGED**
 - [Codesema #32](https://github.com/getCodesema/codesema-cli/pull/32) — renamed and copied preview entries retain the destination path used for later status and diff lookup → **MERGED**
+- [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — terminal payment evidence is counted once so fully captured/refunded collections do not collapse into false partial states → **MERGED**
 
 ![DATA / CONTEXT ×4](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-4-8250df?style=flat-square&labelColor=8250df)
 
@@ -46,9 +47,10 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 - [Weftmap #178](https://github.com/DataDave-Dev/weftmap/pull/178) — a failed tree-sitter initialization remains a failure for the current caller while clearing the cached promise so a later request can retry → **MERGED**
 - [Python Code Health Analyzer #19](https://github.com/Johnkothapalli/python-code-health-analyzer/pull/19) — malformed cached reports recover as cache misses without swallowing SQLite operational failures, then repopulate with valid analysis state → **MERGED**
 
-![INSTALL / COMPLETION ×1](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-1-bc4c00?style=flat-square&labelColor=bc4c00)
+![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00)
 
 - [RNAlysis #289](https://github.com/GuyTeichman/RNAlysis/pull/289) — incomplete R-package installation cannot silently continue as if required packages are available → **MERGED**
+- [KaotoIO camel-catalog #130](https://github.com/KaotoIO/camel-catalog/pull/130) — catalog generation now fails when an aggregate handler throws instead of silently continuing, while preserving the original failure cause → **MERGED**
 
 ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490)
 
@@ -67,9 +69,6 @@ These are public OSS contributions, not client engagements or evidence of paid c
 These are submitted but not yet counted as merged proof:
 
 - [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — materialized state + source-of-truth event atomicity
-- [Cerbos #3328](https://github.com/cerbos/cerbos/pull/3328) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — accepted policy mutation != current valid authority chain
-- [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — correlated payment evidence != independent financial transitions
-- [KaotoIO camel-catalog #130](https://github.com/KaotoIO/camel-catalog/pull/130) — **SUBMITTED / OPEN / NOT COUNTED AS MERGED PROOF** — aggregate catalog handler failures propagate instead of being silently swallowed, preserving the original failure cause
 
 ## Current work
 
