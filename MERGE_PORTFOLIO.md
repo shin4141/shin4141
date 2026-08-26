@@ -2,6 +2,8 @@
 
 This is the canonical detailed ledger for Shin's 24 direct upstream merges across 20 independent public repositories.
 
+This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 24-merge count.
+
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
 [← Back to the profile README](README.md)
