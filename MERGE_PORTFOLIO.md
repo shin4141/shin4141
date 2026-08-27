@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 24 direct upstream merges across 20 independent public repositories.
+This is the canonical detailed ledger for Shin's 25 direct upstream merges across 21 independent public repositories.
 
-This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 24-merge count.
+This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 25-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×5](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-5-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×5](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-5-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×5](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-5-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×6
 
@@ -29,8 +29,9 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 - [Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract. The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
 
-## CONFIG / POLICY ×5
+## CONFIG / POLICY ×6
 
+- [NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — rules explicitly classified as `Excluded Rules` are omitted from the generated JSON manifest while the existing configuration-profile exclusion behavior remains unchanged, with regression coverage for included and excluded rules → **MERGED**
 - [bmad-loop #587](https://github.com/bmad-code-org/bmad-loop/pull/587) — strict `limits.*` scalar validation prevents quoted or wrong-type TOML values from silently changing policy meaning → **MERGED**
 - [makoto2 #94](https://github.com/pooza/makoto2/pull/94) — service URLs preserve their HTTP(S)-only contract by rejecting misspelled or non-HTTP(S) schemes during configuration validation → **MERGED**
 - [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**

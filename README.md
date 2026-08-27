@@ -2,7 +2,7 @@
 
 Independent researcher and builder working on AI systems, boundary integrity, and Decision-OS.
 
-**24 direct upstream merges across 20 independent public repositories.**
+**25 direct upstream merges across 21 independent public repositories.**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -20,6 +20,7 @@ The two acceptance routes below are distinct: direct upstream merges and credite
 
 Each link exposes the failure boundary, bounded repair, and third-party direct upstream acceptance:
 
+- **[NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — security compliance / manifest policy boundary.** Rules explicitly classified as `Excluded Rules` could still leak into the generated JSON manifest → omit excluded rules during manifest generation while preserving the existing configuration-profile exclusion behavior, and add regression coverage for both included and excluded rules → the patch was merged upstream.
 - **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — developer tooling / deterministic failure handling.** Distinct OpenAPI components could collapse to the same generated Swift type name and crash recursive-type boxing → detect collisions before boxing, emit a deterministic diagnostic, and cover the regression → maintainer feedback was addressed, then the patch was approved and merged.
 - **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — protocol / validation boundary.** Non-six-octet interface IDs could make IS-04 Node resources schema-invalid → apply repository-native regex validation, the existing schema-valid fallback, and expanded malformed-input tests → maintainer-requested changes were incorporated and the patch was merged.
 - **[Vercel / workflow #3575](https://github.com/vercel/workflow/pull/3575) — atomic state / recovery.** A step row could commit without its replay event and wedge later replay → write both in one transaction while preserving recovery for existing orphan rows → the upstream reviewer approved and merged the patch.
@@ -32,11 +33,11 @@ Each link exposes the failure boundary, bounded repair, and third-party direct u
 
 ### Verified merge portfolio
 
-All 24 verified merges are preserved in the canonical detailed ledger:
+All 25 verified merges are preserved in the canonical detailed ledger:
 
 **[Open the full verified merge portfolio →](MERGE_PORTFOLIO.md)**
 
-Boundary coverage: **STATE / TRANSITION ×6** · **DATA / CONTEXT ×5** · **CONFIG / POLICY ×5** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×3**
+Boundary coverage: **STATE / TRANSITION ×6** · **DATA / CONTEXT ×5** · **CONFIG / POLICY ×6** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×3**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
