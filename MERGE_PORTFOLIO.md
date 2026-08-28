@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 25 direct upstream merges across 21 independent public repositories.
+This is the canonical detailed ledger for Shin's 28 direct upstream merges across 24 independent public repositories.
 
-This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 25-merge count.
+This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 28-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×5](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-5-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×3](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-3-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×5](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-5-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×6
 
@@ -21,8 +21,9 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — terminal payment evidence is counted once so fully captured/refunded collections do not collapse into false partial states → **MERGED**
 - [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — the step entity and matching `step_created` event now commit atomically, while old partial-write orphans can still be drained without losing replay history → **MERGED**
 
-## DATA / CONTEXT ×5
+## DATA / CONTEXT ×6
 
+- [OSC / Open OnDemand #5725](https://github.com/OSC/ondemand/pull/5725) — an absent Slurm GRES field follows the missing-value display path instead of crashing Active Jobs rendering, after review-driven coercion/display refinement → **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
 - [Job Autofill #215](https://github.com/ritsth/job-autofill-extension/pull/215) — preserve known metadata when blank inputs would otherwise overwrite it → **MERGED**
 - [Job Autofill #221](https://github.com/ritsth/job-autofill-extension/pull/221) — company detection falls back to trimmed image alt text when visible text is absent; visible text retains priority; blank alt values preserve selector fallthrough → **MERGED**
@@ -52,8 +53,10 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-## NUMERIC / REPRESENTATION ×3
+## NUMERIC / REPRESENTATION ×5
 
+- [Hyperledger Besu / besu #11128](https://github.com/besu-eth/besu/pull/11128) — ordinary `state-test --json` output omits only the final human summary so JSONL remains machine-readable, with other output modes, result semantics, and exit behavior preserved → **MERGED**
+- [Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — single-field fixed-size struct codecs preserve literal `fixedSize` while multi-field behavior remains unchanged, with maintainer-requested typetest refinement → **MERGED**
 - [Apple swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — duplicate generated schema names fail with a deterministic diagnostic instead of crashing during recursive-type boxing → **MERGED**
 - [Sony nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — invalid Node interface port IDs fall back to the existing schema-valid null address; maintainer review requested repository-native regex validation and expanded malformed-input coverage before merge → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
