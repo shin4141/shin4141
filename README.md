@@ -14,7 +14,7 @@ Typical boundaries: retry, rollback, replay, partial progress, authority changes
 
 ## Public upstream acceptance — technical repair evidence
 
-The two acceptance routes below are distinct: direct upstream merges and credited upstream adoption.
+The two acceptance routes below are distinct: direct upstream merges and upstream adoption beyond direct merges.
 
 ### Direct upstream acceptance
 
@@ -30,9 +30,12 @@ Each link exposes the failure boundary, bounded repair, and third-party direct u
 - **[Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract.** The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
 - **[Dynawo / DyCoV #385](https://github.com/dynawo/dyn-grid-compliance-verification/pull/385) — power-grid compliance tooling / explicit correctness acceptance.** A missing parameter set produced an empty XPath result that bypassed absence handling → treat the empty result as missing and add regression coverage → the maintainer stated “the change is correct,” extended Shin’s branch with the adjacent fix and tests, verified 778 passed and `ruff` clean, and merged.
 
-### Credited upstream adoption
+<a id="credited-upstream-adoption"></a>
+
+### Upstream adoption beyond direct merges
 
 - **[OpenClaw / Memory Core #129927](https://github.com/openclaw/openclaw/pull/129927) — memory indexing / bounded batch recovery.** When an embedding provider explicitly rejected an oversized batch, Memory Core could stop instead of continuing safely with smaller batches. I submitted the [original fix in #125722](https://github.com/openclaw/openclaw/pull/125722); upstream carried it forward into a replacement PR, explicitly credited me as `@shin4141`, and merged that replacement PR.
+- **[NIST / FiPy #1225](https://github.com/usnistgov/fipy/pull/1225) — maintainer-implemented technical finding / lazy dependency boundary.** My original PR #1224 was closed under the project’s generative-AI content policy, but a focused countercase on the maintainer replacement PR exposed a remaining lazy-dependency break in `alpha_constraint`. A reviewer made addressing my comment a condition of approval; the maintainer refined the causal diagnosis, implemented the lazy expression and regression coverage, and merged the repair upstream.
 
 ### Verified merge portfolio
 
