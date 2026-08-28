@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 28 direct upstream merges across 24 independent public repositories.
+This is the canonical detailed ledger for Shin's 29 direct upstream merges across 25 independent public repositories.
 
-This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 28-merge count.
+This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 29-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,10 +10,11 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×6](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-6-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×5](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-5-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×5](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-5-cf222e?style=flat-square&labelColor=cf222e)
 
-## STATE / TRANSITION ×6
+## STATE / TRANSITION ×7
 
+- [Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — HTTP 409 is accepted as idempotent success only after the requested remote state is observed; otherwise the existing bounded retry continues and unresolved convergence returns an error → **MERGED**
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — stale graph and error invalidation across workspace context changes → **MERGED**
 - [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — process-state truth / permission handling; maintainer reproduced the failure and re-verified the repair with real `EACCES` → **MERGED**
