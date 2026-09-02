@@ -1,10 +1,18 @@
 # Shin
 
-Independent researcher and builder working on AI systems, boundary integrity, and Decision-OS.
+## Technical Boundary Audit & Repair for AI Systems
 
-**29 direct upstream merges across 25 independent public repositories.**
+I independently examine and repair failure boundaries in AI agents and automated systems—including false completion, duplicate execution, broken retry/resume, state drift, and authority mismatch.
 
-These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
+**29 direct upstream merges across 25 independent public repositories**, including NIST, Microsoft, and Apple.
+
+## Selected direct upstream evidence
+
+- **[NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775)** — excluded policy rules could leak into a generated manifest; the bounded repair and regression coverage were merged directly upstream.
+- **[Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254)** — a conflict could report success before the desired remote state was observed; the verification-and-retry repair was approved and merged directly upstream.
+- **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939)** — colliding generated type names could crash processing; the deterministic diagnostic and regression repair were reviewed and merged directly upstream.
+
+## Technical boundary focus
 
 I focus on consequential state transitions — places where a system says something is complete, settled, authorized, recorded, cancelled, or recovered, but the underlying state does not fully support that claim.
 
@@ -12,17 +20,16 @@ I focus on consequential state transitions — places where a system says someth
 
 Typical boundaries: retry, rollback, replay, partial progress, authority changes, durable state, payment / settlement state, and AI-agent handoff.
 
-## Public upstream acceptance — technical repair evidence
+The scope is technical boundary audit and repair, not comprehensive security, compliance, or every-environment coverage.
+
+## Additional public upstream acceptance
 
 The two acceptance routes below are distinct: direct upstream merges and upstream adoption beyond direct merges.
 
-### Direct upstream acceptance
+### Additional direct upstream acceptance
 
 Each link exposes the failure boundary, bounded repair, and third-party direct upstream acceptance:
 
-- **[NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — security compliance / manifest policy boundary.** Rules explicitly classified as `Excluded Rules` could still leak into the generated JSON manifest → omit excluded rules during manifest generation while preserving the existing configuration-profile exclusion behavior, and add regression coverage for both included and excluded rules → the one-commit patch was merged directly upstream; the public PR shows no maintainer-requested revision.
-- **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — developer tooling / deterministic failure handling.** Distinct OpenAPI components could collapse to the same generated Swift type name and crash recursive-type boxing → detect collisions before boxing, emit a deterministic diagnostic, and cover the regression → maintainer feedback was addressed, then the patch was approved and merged.
-- **[Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — cloud platform / desired-state verification boundary.** HTTP 409 could mean either that the requested state was already established or that an operation had been rejected while the environment was busy; affected paths could therefore report success without observing the requested state. The repair re-reads remote state on conflict, accepts only an observed desired state as idempotent success, otherwise retries within the existing bound and ultimately errors if convergence never occurs → a human reviewer approved the patch and it was merged directly upstream.
 - **[Hyperledger Besu / Ethereum #11128](https://github.com/besu-eth/besu/pull/11128) — Ethereum execution client / machine-readable output boundary.** Besu’s Ethereum state-test `--json` mode mixed machine-readable JSONL with a final human-readable summary → suppress only that summary in ordinary JSON mode while preserving non-JSON, summary-only, JSON-array, result semantics, and exit behavior → a human reviewer explicitly approved the patch, then it was merged.
 - **[Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — Solana developer stack / codec type contract boundary.** Single-field fixed-size struct codecs widened literal `fixedSize` to `number` → preserve the literal for exactly one fixed-size field while leaving multi-field behavior unchanged → maintainer-requested typetest refinement was incorporated, then the patch was approved and merged.
 - **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — protocol / validation boundary.** Non-six-octet interface IDs could make IS-04 Node resources schema-invalid → apply repository-native regex validation, the existing schema-valid fallback, and expanded malformed-input tests → maintainer-requested changes were incorporated and the patch was merged.
@@ -38,7 +45,7 @@ Each link exposes the failure boundary, bounded repair, and third-party direct u
 - **[OpenClaw / Memory Core #129927](https://github.com/openclaw/openclaw/pull/129927) — memory indexing / bounded batch recovery.** When an embedding provider explicitly rejected an oversized batch, Memory Core could stop instead of continuing safely with smaller batches. I submitted the [original fix in #125722](https://github.com/openclaw/openclaw/pull/125722); upstream carried it forward into a replacement PR, explicitly credited me as `@shin4141`, and merged that replacement PR.
 - **[NIST / FiPy #1225](https://github.com/usnistgov/fipy/pull/1225) — maintainer-implemented technical finding / lazy dependency boundary.** My original PR #1224 was closed under the project’s generative-AI content policy, but a focused countercase on the maintainer replacement PR exposed a remaining lazy-dependency break in `alpha_constraint`. A reviewer made addressing my comment a condition of approval; the maintainer refined the causal diagnosis, implemented the lazy expression and regression coverage, and merged the repair upstream.
 
-### Verified merge portfolio
+### Full verified merge ledger
 
 All 29 verified merges are preserved in the canonical detailed ledger:
 
@@ -46,9 +53,11 @@ All 29 verified merges are preserved in the canonical detailed ledger:
 
 Boundary coverage: **STATE / TRANSITION ×7** · **DATA / CONTEXT ×6** · **CONFIG / POLICY ×6** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×5**
 
-These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
+These are public OSS contributions, not client engagements or evidence of paid commercial conversion. A merged OSS contribution is not a commercial outcome or client endorsement.
 
 ## Current work
+
+Independent researcher and builder working on AI systems, boundary integrity, and Decision-OS.
 
 - [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public)
 - [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit)
