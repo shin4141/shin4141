@@ -4,7 +4,7 @@
 
 I independently examine and repair failure boundaries in AI agents and automated systems—including false completion, duplicate execution, broken retry/resume, state drift, and authority mismatch.
 
-**29 direct upstream merges across 25 independent public repositories** — [NIST #775](https://github.com/usnistgov/macos_security/pull/775), [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), and [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939).
+**31 direct upstream merges across 27 independent public repositories** — [NIST #775](https://github.com/usnistgov/macos_security/pull/775), [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), and [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939).
 
 ## Technical boundary focus
 
@@ -44,11 +44,11 @@ Each link exposes the failure boundary, bounded repair, and third-party direct u
 
 ### Full verified merge ledger
 
-All 29 verified merges are preserved in the canonical detailed ledger:
+All 31 verified merges are preserved in the canonical detailed ledger:
 
 **[Open the full verified merge portfolio →](MERGE_PORTFOLIO.md)**
 
-Boundary coverage: **STATE / TRANSITION ×7** · **DATA / CONTEXT ×6** · **CONFIG / POLICY ×6** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×5**
+Boundary coverage: **STATE / TRANSITION ×7** · **DATA / CONTEXT ×6** · **CONFIG / POLICY ×7** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×6**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion. A merged OSS contribution is not a commercial outcome or client endorsement.
 

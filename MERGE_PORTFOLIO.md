@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 29 direct upstream merges across 25 independent public repositories.
+This is the canonical detailed ledger for Shin's 31 direct upstream merges across 27 independent public repositories.
 
-This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 29-merge count.
+This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 31-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×6](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-6-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×5](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-5-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×7](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-7-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×6](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-6-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -31,7 +31,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 - [Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract. The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
 
-## CONFIG / POLICY ×6
+## CONFIG / POLICY ×7
 
 - [NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — rules explicitly classified as `Excluded Rules` are omitted from the generated JSON manifest while the existing configuration-profile exclusion behavior remains unchanged, with regression coverage for included and excluded rules → **MERGED**
 - [bmad-loop #587](https://github.com/bmad-code-org/bmad-loop/pull/587) — strict `limits.*` scalar validation prevents quoted or wrong-type TOML values from silently changing policy meaning → **MERGED**
@@ -39,6 +39,8 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**
 - [Rosetta #285](https://github.com/griddynamics/rosetta/pull/285) — plan writes reject empty, whitespace-only, and non-string names through shared validation while preserving omitted-name defaults → **MERGED**
 - [Dynawo / DyCoV #385](https://github.com/dynawo/dyn-grid-compliance-verification/pull/385) — power-grid compliance tooling / explicit correctness acceptance. A missing parameter set produced an empty XPath result that bypassed absence handling → treat the empty result as missing and add regression coverage → the maintainer stated “the change is correct,” extended Shin’s branch with the adjacent fix and tests, verified 778 passed and `ruff` clean, and merged.
+
+- [Works Applications / sudachi.rs #360](https://github.com/WorksApplications/sudachi.rs/pull/360) — update PyO3 while deliberately dropping Python 3.13t support at the public import boundary, preserving Python 3.14t and regular CPython 3.10+ ABI3 wheels, and keeping the distribution matrix aligned with that support policy → **MERGED**
 
 ## RETRY / RECOVERY ×2
 
@@ -54,10 +56,11 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-## NUMERIC / REPRESENTATION ×5
+## NUMERIC / REPRESENTATION ×6
 
 - [Hyperledger Besu / besu #11128](https://github.com/besu-eth/besu/pull/11128) — ordinary `state-test --json` output omits only the final human summary so JSONL remains machine-readable, with other output modes, result semantics, and exit behavior preserved → **MERGED**
 - [Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — single-field fixed-size struct codecs preserve literal `fixedSize` while multi-field behavior remains unchanged, with maintainer-requested typetest refinement → **MERGED**
 - [Apple swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — duplicate generated schema names fail with a deterministic diagnostic instead of crashing during recursive-type boxing → **MERGED**
 - [Sony nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — invalid Node interface port IDs fall back to the existing schema-valid null address; maintainer review requested repository-native regex validation and expanded malformed-input coverage before merge → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
+- [FHIR / SUSHI #1635](https://github.com/FHIR/sushi/pull/1635) — multiline FSH strings ending in quote characters retain those content quotes before the final triple-quote delimiter instead of leaving a quote outside the token, with focused regression coverage → **MERGED**
