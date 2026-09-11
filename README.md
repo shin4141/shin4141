@@ -1,10 +1,10 @@
-# Shin
-
 ## Technical Boundary Audit & Repair for AI Systems
 
 I independently examine and repair failure boundaries in AI agents and automated systems—including false completion, duplicate execution, broken retry/resume, state drift, and authority mismatch.
 
 **31 direct upstream merges across 27 independent public repositories** — [NIST #775](https://github.com/usnistgov/macos_security/pull/775), [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), and [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939).
+
+**Release recognition:** Listed under “New Contributors” in the [NIST macOS Security Compliance Project’s mSCP 2.0 / Release 27.0 notes](https://github.com/usnistgov/macos_security/releases/tag/release_27.0), which also include my merged fix for excluded rules in the JSON manifest (#775).
 
 ## Technical boundary focus
 
