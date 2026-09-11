@@ -34,6 +34,8 @@ These are public OSS contributions, not client engagements or evidence of paid c
 ## CONFIG / POLICY ×7
 
 - [NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — rules explicitly classified as `Excluded Rules` are omitted from the generated JSON manifest while the existing configuration-profile exclusion behavior remains unchanged, with regression coverage for included and excluded rules → **MERGED**
+
+  Release evidence: The project’s official [mSCP 2.0, Release 27.0 notes](https://github.com/usnistgov/macos_security/releases/tag/release_27.0) list #775 under Pull Requests and `@shin4141` under New Contributors (published 2026-09-11). This is additional release-level evidence for the same contribution, not an additional merge.
 - [bmad-loop #587](https://github.com/bmad-code-org/bmad-loop/pull/587) — strict `limits.*` scalar validation prevents quoted or wrong-type TOML values from silently changing policy meaning → **MERGED**
 - [makoto2 #94](https://github.com/pooza/makoto2/pull/94) — service URLs preserve their HTTP(S)-only contract by rejecting misspelled or non-HTTP(S) schemes during configuration validation → **MERGED**
 - [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**
