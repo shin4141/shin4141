@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 31 direct upstream merges across 27 independent public repositories.
+This is the canonical detailed ledger for Shin's 32 direct upstream merges across 28 independent public repositories.
 
-This ledger covers direct upstream merges only. Credited upstream adoption is tracked separately in the [profile README](README.md#credited-upstream-adoption) and is not included in the 31-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 32-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×7](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-7-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×6](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-6-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×7](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-7-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×7](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-7-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -58,8 +58,9 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-## NUMERIC / REPRESENTATION ×6
+## NUMERIC / REPRESENTATION ×7
 
+- [PowerGridModel / power-grid-model #1547](https://github.com/PowerGridModel/power-grid-model/pull/1547) — short-circuit voltage scaling now applies the matching `1/c` source-admittance factor consistently to matrix assembly and source-current output while leaving power-flow and state-estimation behavior unchanged; three review threads were addressed before the patch was merged → **MERGED**
 - [Hyperledger Besu / besu #11128](https://github.com/besu-eth/besu/pull/11128) — ordinary `state-test --json` output omits only the final human summary so JSONL remains machine-readable, with other output modes, result semantics, and exit behavior preserved → **MERGED**
 - [Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — single-field fixed-size struct codecs preserve literal `fixedSize` while multi-field behavior remains unchanged, with maintainer-requested typetest refinement → **MERGED**
 - [Apple swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — duplicate generated schema names fail with a deterministic diagnostic instead of crashing during recursive-type boxing → **MERGED**

@@ -2,7 +2,9 @@
 
 I independently examine and repair failure boundaries in AI agents and automated systems—including false completion, duplicate execution, broken retry/resume, state drift, and authority mismatch.
 
-**31 direct upstream merges across 27 independent public repositories** — [NIST #775](https://github.com/usnistgov/macos_security/pull/775), [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), and [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939).
+**OpenSSL — upstream adoption in `master`.** Recursive seed-source construction could exhaust the stack → the reviewed repair now fails cleanly; [PR #32685](https://github.com/openssl/openssl/pull/32685) remains `Closed`, and adoption is recorded in [commit `aeeca5a`](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78).
+
+**32 direct upstream merges across 28 independent public repositories** — [NIST #775](https://github.com/usnistgov/macos_security/pull/775), [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), and [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939).
 
 **Release recognition:** Listed under “New Contributors” in the [NIST macOS Security Compliance Project’s mSCP 2.0 / Release 27.0 notes](https://github.com/usnistgov/macos_security/releases/tag/release_27.0), which also include my merged fix for excluded rules in the JSON manifest (#775).
 
@@ -18,22 +20,23 @@ The scope is technical boundary audit and repair, not comprehensive security, co
 
 ## Public upstream acceptance
 
-The two acceptance routes below are distinct: direct upstream merges and upstream adoption beyond direct merges.
+The two acceptance routes below are distinct: maintainer-committed upstream adoption and direct upstream PR merges.
+
+### OpenSSL adoption beyond a direct PR merge
+
+- **[OpenSSL #32685](https://github.com/openssl/openssl/pull/32685) — RAND seed-source recursion.** Recursive construction could exhaust the stack → upstream committed the reviewed repair to `master` as [`aeeca5a`](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78), with `Merged-from` pointing to #32685. The PR remains `Closed`; the [OpenSSL 4.1 cherry-pick](https://github.com/openssl/openssl/commit/b2d073565875664d8baee1493e9a07eca922687d) is the same repair and is not counted again.
 
 ### Direct upstream acceptance
 
 Each link exposes the failure boundary, bounded repair, and third-party direct upstream acceptance:
 
-- **[NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775) — security compliance / manifest policy boundary.** Rules explicitly classified as `Excluded Rules` could still leak into the generated JSON manifest → omit excluded rules during manifest generation while preserving the existing configuration-profile exclusion behavior, and add regression coverage for both included and excluded rules → the one-commit patch was merged directly upstream; the public PR shows no maintainer-requested revision.
-- **[Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — cloud platform / desired-state verification boundary.** HTTP 409 could mean either that the requested state was already established or that an operation had been rejected while the environment was busy; affected paths could therefore report success without observing the requested state. The repair re-reads remote state on conflict, accepts only an observed desired state as idempotent success, otherwise retries within the existing bound and ultimately errors if convergence never occurs → a human reviewer approved the patch and it was merged directly upstream.
-- **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939) — developer tooling / deterministic failure handling.** Distinct OpenAPI components could collapse to the same generated Swift type name and crash recursive-type boxing → detect collisions before boxing, emit a deterministic diagnostic, and cover the regression → maintainer feedback was addressed, then the patch was approved and merged.
-- **[Hyperledger Besu / Ethereum #11128](https://github.com/besu-eth/besu/pull/11128) — Ethereum execution client / machine-readable output boundary.** Besu’s Ethereum state-test `--json` mode mixed machine-readable JSONL with a final human-readable summary → suppress only that summary in ordinary JSON mode while preserving non-JSON, summary-only, JSON-array, result semantics, and exit behavior → a human reviewer explicitly approved the patch, then it was merged.
-- **[Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — Solana developer stack / codec type contract boundary.** Single-field fixed-size struct codecs widened literal `fixedSize` to `number` → preserve the literal for exactly one fixed-size field while leaving multi-field behavior unchanged → maintainer-requested typetest refinement was incorporated, then the patch was approved and merged.
-- **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — protocol / validation boundary.** Non-six-octet interface IDs could make IS-04 Node resources schema-invalid → apply repository-native regex validation, the existing schema-valid fallback, and expanded malformed-input tests → maintainer-requested changes were incorporated and the patch was merged.
-- **[Vercel / workflow #3575](https://github.com/vercel/workflow/pull/3575) — atomic state / recovery.** A step row could commit without its replay event and wedge later replay → write both in one transaction while preserving recovery for existing orphan rows → the upstream reviewer approved and merged the patch.
-- **[OSC / Open OnDemand #5725](https://github.com/OSC/ondemand/pull/5725) — HPC operations / scheduler metadata boundary.** Open OnDemand’s Active Jobs view could crash when an optional Slurm GRES field became `nil` → repair the missing-value display boundary; maintainer review challenged the coercion/display semantics, the feedback was incorporated, and the patch was merged.
-- **[Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract.** The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
-- **[Dynawo / DyCoV #385](https://github.com/dynawo/dyn-grid-compliance-verification/pull/385) — power-grid compliance tooling / explicit correctness acceptance.** A missing parameter set produced an empty XPath result that bypassed absence handling → treat the empty result as missing and add regression coverage → the maintainer stated “the change is correct,” extended Shin’s branch with the adjacent fix and tests, verified 778 passed and `ruff` clean, and merged.
+- **[NIST / macOS Security Compliance Project #775](https://github.com/usnistgov/macos_security/pull/775).** Excluded rules could leak into the generated JSON manifest → preserve the exclusion policy in manifest generation; merged upstream and listed in the project’s release notes.
+- **[Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254).** An HTTP 409 could be mistaken for success → re-read remote state and keep bounded retry when the requested state is absent; approved and merged.
+- **[Apple / swift-openapi-generator #939](https://github.com/apple/swift-openapi-generator/pull/939).** Generated Swift type-name collisions could crash recursive-type boxing → return a deterministic diagnostic; maintainer feedback was addressed and the patch was merged.
+- **[Hyperledger Besu / Ethereum #11128](https://github.com/besu-eth/besu/pull/11128).** Human summary text could corrupt state-test JSONL → omit only that summary in ordinary JSON mode; approved and merged.
+- **[Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971).** Single-field fixed-size codecs lost the literal `fixedSize` type → preserve it without changing multi-field behavior; review feedback was incorporated and the patch was merged.
+- **[Sony / nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520).** Invalid interface IDs could make IS-04 resources schema-invalid → validate and use the existing safe fallback; review feedback was incorporated and the patch was merged.
+- **[Vercel / workflow #3575](https://github.com/vercel/workflow/pull/3575).** A step could commit without its replay event → write both atomically while preserving orphan recovery; approved and merged.
 
 <a id="credited-upstream-adoption"></a>
 
@@ -44,11 +47,11 @@ Each link exposes the failure boundary, bounded repair, and third-party direct u
 
 ### Full verified merge ledger
 
-All 31 verified merges are preserved in the canonical detailed ledger:
+All 32 verified direct merges—including OSC / Open OnDemand #5725, Adyen #1760, Dynawo / DyCoV #385, and PowerGridModel #1547—are preserved in the canonical detailed ledger:
 
 **[Open the full verified merge portfolio →](MERGE_PORTFOLIO.md)**
 
-Boundary coverage: **STATE / TRANSITION ×7** · **DATA / CONTEXT ×6** · **CONFIG / POLICY ×7** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×6**
+Boundary coverage: **STATE / TRANSITION ×7** · **DATA / CONTEXT ×6** · **CONFIG / POLICY ×7** · **RETRY / RECOVERY ×2** · **INSTALL / COMPLETION ×2** · **TRANSPORT / PARTIAL PROGRESS ×1** · **NUMERIC / REPRESENTATION ×7**
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion. A merged OSS contribution is not a commercial outcome or client endorsement.
 
