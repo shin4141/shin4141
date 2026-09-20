@@ -9,3 +9,9 @@ Rollback: use a new reviewed profile change to restore the heading line and remo
 ## Independent repository handoff
 
 The first profile update landed as `e5d3b94ddb2ca88be760115120761b45c0612491`. After the generator was extracted, [github-profile-motion](https://github.com/shin4141/github-profile-motion) main at `af863aca4595b32e18e05fda19a2e3cbda385463` became the image source and the README gained one usage link. This second update changes only those three image URLs and adds that link. For a narrow rollback of the source switch, restore the three V13 image URLs from `e5d3b94` in a new reviewed commit and remove the usage link; retain later unrelated edits. For a complete presentation rollback, use the pre-V216 comparison source above. Both asset commits are immutable recovery points.
+
+## Compact profile follow-up
+
+Before the compacting edit, profile main was `5cc31383b3760320359d6e7938a6af60fd039df3` and `README.md` SHA-256 was `af9814f72552f30dbc16f4030b0a90c0fe4b40b3b8ad132e9ba50e4fe390dbe6`. The fixed image URLs, account avatar, 32-direct-merge ledger, and contact address are not changed. The cat GIF at independent-repository commit `af863aca4595b32e18e05fda19a2e3cbda385463` exactly regenerates from `cat.json` and `shin_activity_2026-09-20.json` with seed 216; that JSON identifies `shin4141`, GitHub GraphQL `contributionsCollection`, observation `2026-09-20T02:47:24Z`, and days `2026-03-08` through `2026-09-20`.
+
+Rollback the compacting edit by creating a new reviewed profile PR that uses `5cc3138:README.md` as the full prior-state comparison, or restores selected passages from it. Do not reset a later main or overwrite unrelated later edits. The detailed direct-merge evidence stays in `MERGE_PORTFOLIO.md`; the OpenSSL adoption distinction remains visible in the compact README and at the pre-edit commit.
