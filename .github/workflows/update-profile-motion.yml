@@ -14,6 +14,6 @@ concurrency:
 
 jobs:
   refresh:
-    uses: shin4141/github-profile-motion/.github/workflows/render-profile.yml@3387e50d64edb220ab76b6f852e8cade7467c5c9
+    uses: shin4141/github-profile-motion/.github/workflows/render-profile.yml@1e09b0ee548f9b076a1e295af6735f3175a54f67
     with:
-      generator_ref: 3387e50d64edb220ab76b6f852e8cade7467c5c9
+      generator_ref: 1e09b0ee548f9b076a1e295af6735f3175a54f67
