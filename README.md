@@ -8,9 +8,9 @@ I research, build, and repair AI systems at the boundaries where state, authorit
 **My contributions, with a little chaos.**
 
 <!-- profile-motion:begin -->
-<sub>Shin's GitHub contribution snapshot · 2026-03-08–2026-09-20 · Captured 2026-09-20 02:47 UTC · Not auto-updated</sub>
+<sub>@shin4141's GitHub contribution snapshot · 2026-03-09–2026-09-20 · Last successful capture 2026-09-20 05:13 UTC · Daily refresh scheduled</sub>
 
-![A crowned cat moving through two scenes of Shin's own dated GitHub contribution snapshot](https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=eba63965660290d5)
+![A crowned cat moving through two scenes of Shin's own dated GitHub contribution snapshot](https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=7e2fef00d4990b30)
 <!-- profile-motion:end -->
 
 [Make your own GitHub profile animation →](https://github.com/shin4141/github-profile-motion)
