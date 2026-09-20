@@ -7,9 +7,11 @@ I research, build, and repair AI systems at the boundaries where state, authorit
 
 **My contributions, with a little chaos.**
 
+<!-- profile-motion:begin -->
 <sub>Shin's GitHub contribution snapshot · 2026-03-08–2026-09-20 · Captured 2026-09-20 02:47 UTC · Not auto-updated</sub>
 
-![A crowned cat moving through two scenes of Shin's own dated GitHub contribution snapshot](https://raw.githubusercontent.com/shin4141/github-profile-motion/af863aca4595b32e18e05fda19a2e3cbda385463/crowned_cat.gif)
+![A crowned cat moving through two scenes of Shin's own dated GitHub contribution snapshot](https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=eba63965660290d5)
+<!-- profile-motion:end -->
 
 [Make your own GitHub profile animation →](https://github.com/shin4141/github-profile-motion)
 

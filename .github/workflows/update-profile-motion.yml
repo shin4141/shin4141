@@ -1,0 +1,19 @@
+name: Update Shin's profile motion
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # 03:17 UTC / 12:17 JST, daily; GitHub may delay
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shin-profile-motion
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    uses: shin4141/github-profile-motion/.github/workflows/render-profile.yml@f52dfa0d3ab1c224904bb2662d37f77911b0225c
+    with:
+      generator_ref: f52dfa0d3ab1c224904bb2662d37f77911b0225c
