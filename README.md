@@ -1,6 +1,11 @@
-## Technical Boundary Audit & Repair for AI Systems
+<picture>
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shin4141/decision-os-v13-loopkit/94e106701e29a6eadfac132a6b7cb0d0907d909f/examples/profile_motion/heading_mobile.gif">
+  <img src="https://raw.githubusercontent.com/shin4141/decision-os-v13-loopkit/94e106701e29a6eadfac132a6b7cb0d0907d909f/examples/profile_motion/heading.gif" alt="Technical Boundary Audit & Repair for AI Systems — softly flowing purple and cyan light">
+</picture>
 
 I independently examine and repair failure boundaries in AI agents and automated systems—including false completion, duplicate execution, broken retry/resume, state drift, and authority mismatch.
+
+![Round crowned black cat walking through two shockwave-and-nap scenes, exiting right and re-entering left between them](https://raw.githubusercontent.com/shin4141/decision-os-v13-loopkit/94e106701e29a6eadfac132a6b7cb0d0907d909f/examples/profile_motion/crowned_cat.gif)
 
 **OpenSSL — upstream adoption in `master`.** Recursive seed-source construction could exhaust the stack → the reviewed repair now fails cleanly; [PR #32685](https://github.com/openssl/openssl/pull/32685) remains `Closed`, and adoption is recorded in [commit `aeeca5a`](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78).
 
