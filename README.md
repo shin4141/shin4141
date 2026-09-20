@@ -5,16 +5,6 @@
 
 I research, build, and repair AI systems at the boundaries where state, authority, and recovery can go wrong.
 
-**My contributions, with a little chaos.**
-
-<!-- profile-motion:begin -->
-<sub>@shin4141's GitHub contribution snapshot · 2026-03-09–2026-09-20 · Last successful capture 2026-09-20 05:13 UTC · Daily refresh scheduled</sub>
-
-![A crowned cat moving through two scenes of Shin's own dated GitHub contribution snapshot](https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=7e2fef00d4990b30)
-<!-- profile-motion:end -->
-
-[Make your own GitHub profile animation →](https://github.com/shin4141/github-profile-motion)
-
 ## Selected evidence
 
 <a id="openssl-adoption-beyond-a-direct-pr-merge"></a>
@@ -38,3 +28,16 @@ Private boundary review / repair / research collaboration: [siriusa.paper@gmail.
 These are public OSS contributions, not client engagements, commercial outcomes, or client endorsements.
 
 </details>
+
+**My contributions, with a little chaos.**
+
+<!-- profile-motion:begin -->
+<sub>@shin4141's GitHub contribution snapshot · 2026-03-08–2026-09-20 · Last successful capture 2026-09-20 02:47 UTC · Daily refresh scheduled</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=5d0998c115f71c7a4">
+  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=0178305b2d89cb0c" alt="A crowned black cat crosses two green activity scenes, rests, wakes, and loops through Shin's dated GitHub contributions">
+</picture>
+<!-- profile-motion:end -->
+
+[Make it yours →](https://github.com/shin4141/github-profile-motion/blob/main/starter/README.md)
