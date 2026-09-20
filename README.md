@@ -10,7 +10,10 @@ I research, build, and repair AI systems at the boundaries where state, authorit
 <a id="openssl-adoption-beyond-a-direct-pr-merge"></a>
 
 - **OpenSSL — maintainer-committed adoption, not a direct PR merge.** [PR #32685](https://github.com/openssl/openssl/pull/32685) remains `Closed`; the reviewed repair is in [`master` commit aeeca5a](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78). The [4.1 cherry-pick](https://github.com/openssl/openssl/commit/b2d073565875664d8baee1493e9a07eca922687d) is the same repair, not another adoption.
-- **32 direct upstream merges across 28 independent public repositories.** Examples: [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939), and [Hyperledger Besu #11128](https://github.com/besu-eth/besu/pull/11128). [Full verified merge portfolio →](MERGE_PORTFOLIO.md)
+- **32 direct upstream merges across 28 independent public repositories.** Examples: [Microsoft #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254), [Apple #939](https://github.com/apple/swift-openapi-generator/pull/939), and [Hyperledger Besu #11128](https://github.com/besu-eth/besu/pull/11128).
+
+[View all upstream contributions →](MERGE_PORTFOLIO.md)
+
 - **NIST release recognition.** [mSCP 2.0 / Release 27.0](https://github.com/usnistgov/macos_security/releases/tag/release_27.0) lists `@shin4141` under New Contributors and the merged [#775](https://github.com/usnistgov/macos_security/pull/775); this is release evidence for that same direct merge, not an extra merge.
 
 ## Projects and contact
