@@ -36,11 +36,11 @@ These are public OSS contributions, not client engagements, commercial outcomes,
 **My contributions, with a little chaos.**
 
 <!-- profile-motion:begin -->
-<sub>@shin4141's GitHub contribution snapshot · 2025-09-24–2026-09-23 · Last successful capture 2026-09-23 08:40 UTC · Daily refresh scheduled</sub>
+<sub>@shin4141's GitHub contribution snapshot · 2025-09-25–2026-09-24 · Last successful capture 2026-09-24 08:32 UTC · Daily refresh scheduled</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=73e396cfe6fab6b8">
-  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=3b18716467ebc32d" alt="A crowned black cat crosses Shin&#x27;s full-year GitHub contribution grid in two animated scenes">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=b4954e54ea7564a8">
+  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=14e426c6fb90e0e2" alt="A crowned black cat crosses Shin&#x27;s full-year GitHub contribution grid in two animated scenes">
 </picture>
 <!-- profile-motion:end -->
 
