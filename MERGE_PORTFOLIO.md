@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 34 direct upstream merges across 30 independent public repositories.
+This is the canonical detailed ledger for Shin's 35 direct upstream merges across 30 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 34-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 35-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×9](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-9-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×7](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-7-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×7](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-7-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -31,7 +31,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 - [Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract. The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
 
-## CONFIG / POLICY ×9
+## CONFIG / POLICY ×10
 
 - [Rundeck #10488](https://github.com/rundeck/rundeck/pull/10488) — project archive imports that change configuration now require `configure` authorization in addition to `import`, while jobs-only imports retain their existing authorization; GUI and API checks preserve API-version normalization and existing SCM/ACL checks → **MERGED**. The original PR and its [CI preparation PR #10650](https://github.com/rundeck/rundeck/pull/10650) are both merged; the repair reached `main` on 2026-09-25 UTC (2026-09-26 JST) in [commit 4a1d24a](https://github.com/rundeck/rundeck/commit/4a1d24a762b57ec5909028748ee43856a13bb491). Counted once for the same contribution.
 
@@ -44,6 +44,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [makoto2 #94](https://github.com/pooza/makoto2/pull/94) — service URLs preserve their HTTP(S)-only contract by rejecting misspelled or non-HTTP(S) schemes during configuration validation → **MERGED**
 - [Rosetta #284](https://github.com/griddynamics/rosetta/pull/284) — configurable Curiocity turn caps flow through case config and CLI override while preserving the existing 100-turn default → **MERGED**
 - [Rosetta #285](https://github.com/griddynamics/rosetta/pull/285) — plan writes reject empty, whitespace-only, and non-string names through shared validation while preserving omitted-name defaults → **MERGED**
+- [Rosetta #362](https://github.com/griddynamics/rosetta/pull/362) — reject duplicate `suites[].id` values during config parsing before prompt benchmark runs, with regressions that preserve variant-ID reuse across distinct suites; this prevents mixed statistics and sample replies. The maintainer approved the validation point and tests → **MERGED** in [commit 7dd0298](https://github.com/griddynamics/rosetta/commit/7dd02985403b29ec0837ec1abc9e005acac52020).
 - [Dynawo / DyCoV #385](https://github.com/dynawo/dyn-grid-compliance-verification/pull/385) — power-grid compliance tooling / explicit correctness acceptance. A missing parameter set produced an empty XPath result that bypassed absence handling → treat the empty result as missing and add regression coverage → the maintainer stated “the change is correct,” extended Shin’s branch with the adjacent fix and tests, verified 778 passed and `ruff` clean, and merged.
 
 - [Works Applications / sudachi.rs #360](https://github.com/WorksApplications/sudachi.rs/pull/360) — update PyO3 while deliberately dropping Python 3.13t support at the public import boundary, preserving Python 3.14t and regular CPython 3.10+ ABI3 wheels, and keeping the distribution matrix aligned with that support policy → **MERGED**

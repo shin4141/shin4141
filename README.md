@@ -6,9 +6,10 @@ I investigate and fix failures in how software tracks completion, permissions, a
 - **[Apple / Swift OpenAPI Generator](https://github.com/apple/swift-openapi-generator/pull/939)** — duplicate generated schema names crashed generation → the merged fix emits a deterministic error.
 - **[Microsoft / Power Platform provider](https://github.com/microsoft/terraform-provider-power-platform/pull/1254)** — HTTP 409 could report success before the requested state existed → the merged fix checks remote state before declaring success; otherwise it retries.
 - **[ESA / pagmo2](https://github.com/esa/pagmo2/pull/634)** — C++20 stateless lambdas broke BFE test assumptions → the merged tests and docs reflect the language change.
+- **[Rosetta / rosettify-prompts](https://github.com/griddynamics/rosetta/pull/362)** — duplicate suite IDs mixed benchmark results → the merged parser rejects them before execution. This is Shin's third direct Rosetta merge; the maintainer approved the check placement and tests.
 - <a id="openssl-adoption-beyond-a-direct-pr-merge"></a>**[OpenSSL](https://github.com/openssl/openssl/pull/32685)** — recursive RAND seed-source construction exhausted the stack → clean failure in a [maintainer-committed repair](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78).
 
-**34 direct upstream merges across 30 independent public repositories.** OpenSSL's maintainer adoption is listed separately and is not in that total.
+**35 direct upstream merges across 30 independent public repositories.** OpenSSL's maintainer adoption is listed separately and is not in that total.
 
 [View all upstream contributions →](MERGE_PORTFOLIO.md)
 
