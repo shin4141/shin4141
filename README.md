@@ -22,11 +22,11 @@ For paid software review or repair inquiries: [siriusa.paper@gmail.com](mailto:s
 **My contributions, with a little chaos.**
 
 <!-- profile-motion:begin -->
-<sub>@shin4141's GitHub contribution snapshot · 2025-10-01–2026-09-30 · Last successful capture 2026-09-30 09:48 UTC · Daily refresh scheduled</sub>
+<sub>@shin4141's GitHub contribution snapshot · 2025-10-02–2026-10-01 · Last successful capture 2026-10-01 10:15 UTC · Daily refresh scheduled</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=ad82a7c9177ddc23">
-  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=43bd6369106944b1" alt="A crowned black cat crosses Shin&#x27;s full-year GitHub contribution grid in two animated scenes">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=380118ee6f02535f">
+  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=30a3799e4449331a" alt="A crowned black cat crosses Shin&#x27;s full-year GitHub contribution grid in two animated scenes">
 </picture>
 <!-- profile-motion:end -->
 
