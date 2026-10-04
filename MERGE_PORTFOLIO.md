@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 35 direct upstream merges across 30 independent public repositories.
+This is the canonical detailed ledger for Shin's 37 direct upstream merges across 32 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 35-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 37-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×6](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-6-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×7](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-7-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×7](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-7-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -22,7 +22,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — terminal payment evidence is counted once so fully captured/refunded collections do not collapse into false partial states → **MERGED**
 - [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — the step entity and matching `step_created` event now commit atomically, while old partial-write orphans can still be drained without losing replay history → **MERGED**
 
-## DATA / CONTEXT ×6
+## DATA / CONTEXT ×7
 
 - [OSC / Open OnDemand #5725](https://github.com/OSC/ondemand/pull/5725) — an absent Slurm GRES field follows the missing-value display path instead of crashing Active Jobs rendering, after review-driven coercion/display refinement → **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
@@ -30,6 +30,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Job Autofill #221](https://github.com/ritsth/job-autofill-extension/pull/221) — company detection falls back to trimmed image alt text when visible text is absent; visible text retains priority; blank alt values preserve selector fallthrough → **MERGED**
 - [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 - [Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract. The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
+- [Kakao / actionbase #505](https://github.com/kakao/actionbase/pull/505) — a pooled `EdgeBuffer` was permanently lost when encoding threw before release; returning the borrowed buffer in `finally` preserves the original exception and lets the next encode reuse the pool → **MERGED**. The maintainer confirmed the one-buffer regression fails on `main`, passes with the patch, and invited a follow-up for pool exhaustion.
 
 ## CONFIG / POLICY ×10
 
@@ -63,7 +64,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-## NUMERIC / REPRESENTATION ×7
+## NUMERIC / REPRESENTATION ×8
 
 - [PowerGridModel / power-grid-model #1547](https://github.com/PowerGridModel/power-grid-model/pull/1547) — short-circuit voltage scaling now applies the matching `1/c` source-admittance factor consistently to matrix assembly and source-current output while leaving power-flow and state-estimation behavior unchanged; three review threads were addressed before the patch was merged → **MERGED**
 - [Hyperledger Besu / besu #11128](https://github.com/besu-eth/besu/pull/11128) — ordinary `state-test --json` output omits only the final human summary so JSONL remains machine-readable, with other output modes, result semantics, and exit behavior preserved → **MERGED**
@@ -72,6 +73,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Sony nmos-cpp #520](https://github.com/sony/nmos-cpp/pull/520) — invalid Node interface port IDs fall back to the existing schema-valid null address; maintainer review requested repository-native regex validation and expanded malformed-input coverage before merge → **MERGED**
 - [Gren core #135](https://github.com/gren-lang/core/pull/135) — exact integer parsing at the maximum-safe-number boundary → **MERGED**
 - [FHIR / SUSHI #1635](https://github.com/FHIR/sushi/pull/1635) — multiline FSH strings ending in quote characters retain those content quotes before the final triple-quote delimiter instead of leaving a quote outside the token, with focused regression coverage → **MERGED**
+- [Mercedes-Benz / odxtools #532](https://github.com/mercedes-benz/odxtools/pull/532) — length-prefixed diagnostic strings now calculate and encode/decode with the same configured character encoding; the Latin-1 `ä` case changes from `02 00 e4` / `\x00ä` to the correct `01 e4` / `ä` → **MERGED**. The maintainer merged the three-file fix and replied “thanks.”
 
 
 ## UPSTREAM IMPACT / MAINTAINER-ADOPTED RESOLUTION ×1
