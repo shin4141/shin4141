@@ -1,5 +1,22 @@
 I investigate and fix failures in how software tracks completion, permissions, and recovery—for example, reporting an operation as done before the requested state exists. I also repair the tests and diagnostics that let these failures go unnoticed.
 
+## Current work
+
+### Sensitive Data Egress Gate
+
+**Design the maximum loss after one credential is compromised.**
+
+If one administrator credential is abused, can it reach 100 records, 10,000, or effectively all of them?
+
+I design bounded data-egress conditions across volume, time, approval, destination, and exception paths.
+
+- [Service and design approach →](https://shin4141.github.io/sensitive-data-egress-gate/)
+- [Reference implementation →](https://github.com/shin4141/sensitive-data-egress-gate-reference)
+
+The service page includes a sample deliverable.
+
+**You can commission the design only. Your existing engineers or vendor can implement it internally.**
+
 ## Selected upstream repairs
 
 - **[Mercedes-Benz / odxtools](https://github.com/mercedes-benz/odxtools/pull/532)** — length-prefixed diagnostic strings mixed UTF-8 byte counts with a different configured encoding → the merged fix uses one encoding consistently for the prefix and payload.
@@ -16,19 +33,6 @@ I investigate and fix failures in how software tracks completion, permissions, a
 
 ## Projects and contact
 
-[Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
+Other projects: [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
 
-For paid software review or repair inquiries: [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
-
-**My contributions, with a little chaos.**
-
-<!-- profile-motion:begin -->
-<sub>@shin4141's GitHub contribution snapshot · 2025-10-05–2026-10-04 · Last successful capture 2026-10-04 09:53 UTC · Daily refresh scheduled</sub>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion-dark.gif?v=bd8579eb1c319f5b">
-  <img src="https://raw.githubusercontent.com/shin4141/shin4141/main/profile-motion.gif?v=195dda8593f17595" alt="A crowned black cat crosses Shin&#x27;s full-year GitHub contribution grid in two animated scenes">
-</picture>
-<!-- profile-motion:end -->
-
-[Make it yours →](https://github.com/shin4141/github-profile-motion/blob/main/starter/README.md)
+For security design, software review, or repair inquiries: [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
