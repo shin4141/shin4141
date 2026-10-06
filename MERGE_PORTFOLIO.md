@@ -1,8 +1,8 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 37 direct upstream merges across 32 independent public repositories.
+This is the canonical detailed ledger for Shin's 39 direct upstream merges across 34 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 37-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 39-merge count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +10,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×7](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-7-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×2](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-2-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×2](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-2-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×7](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-7-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×3](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-3-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -50,13 +50,15 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Works Applications / sudachi.rs #360](https://github.com/WorksApplications/sudachi.rs/pull/360) — update PyO3 while deliberately dropping Python 3.13t support at the public import boundary, preserving Python 3.14t and regular CPython 3.10+ ABI3 wheels, and keeping the distribution matrix aligned with that support policy → **MERGED**
 
-## RETRY / RECOVERY ×2
+## RETRY / RECOVERY ×3
 
+- [FOSSLight / fosslight_util #319](https://github.com/fosslight/fosslight_util/pull/319) — destination-directory setup failure no longer removes the active log handler before the caller can record the error; the merged fix prepares the destination first, preserves the original log for diagnostics, and keeps later relocation retry usable → **MERGED**
 - [Weftmap #178](https://github.com/DataDave-Dev/weftmap/pull/178) — a failed tree-sitter initialization remains a failure for the current caller while clearing the cached promise so a later request can retry → **MERGED**
 - [Python Code Health Analyzer #19](https://github.com/Johnkothapalli/python-code-health-analyzer/pull/19) — malformed cached reports recover as cache misses without swallowing SQLite operational failures, then repopulate with valid analysis state → **MERGED**
 
-## INSTALL / COMPLETION ×2
+## INSTALL / COMPLETION ×3
 
+- [Toyota Connected / emb_cli #240](https://github.com/toyota-connected/emb_cli/pull/240) — package staging no longer launches `chmod` once per mode-bearing file; the merged fix batches unique destinations by mode within bounded argv chunks while preserving repeated-destination copy/permission order, copied content, and nonzero-`chmod` failure handling → **MERGED**
 - [RNAlysis #289](https://github.com/GuyTeichman/RNAlysis/pull/289) — incomplete R-package installation cannot silently continue as if required packages are available → **MERGED**
 - [KaotoIO camel-catalog #130](https://github.com/KaotoIO/camel-catalog/pull/130) — catalog generation now fails when an aggregate handler throws instead of silently continuing, while preserving the original failure cause → **MERGED**
 
