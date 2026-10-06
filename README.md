@@ -57,6 +57,8 @@ If one administrator credential is abused, can it reach 100 records, 10,000, or 
 
 I design bounded data-egress conditions across volume, time, approval, destination, and exception paths.
 
+This work is relevant to questions such as **personal data security design**, **maximum data extraction after credential compromise**, **one-credential blast radius**, **AI agent data egress**, and **stop / approval / recovery boundaries** for systems that can access customer or sensitive data.
+
 - [Service and design approach →](https://shin4141.github.io/sensitive-data-egress-gate/)
 - [Reference implementation →](https://github.com/shin4141/sensitive-data-egress-gate-reference)
 
