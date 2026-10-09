@@ -1,27 +1,22 @@
 <p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 39 direct upstream merges across 34 independent public repositories." width="1200"></picture></a></p>
 
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
-<a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="144" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
-<a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="144" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
-<a href="https://github.com/sony/nmos-cpp/pull/520"><img src="./assets/org-sony.svg" width="144" alt="Sony — nmos-cpp media networking. MERGED PR #520 in sony/nmos-cpp."></a>
-<a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="144" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
-<a href="https://github.com/mercedes-benz/odxtools/pull/532"><img src="./assets/org-mercedes.svg" width="144" alt="Mercedes-Benz — odxtools automotive diagnostics. MERGED PR #532 in mercedes-benz/odxtools."></a>
-<a href="https://github.com/fosslight/fosslight_util/pull/319"><img src="./assets/org-fosslight.svg" width="144" alt="LG Electronics — FOSSLight Util. MERGED PR #319 in fosslight/fosslight_util."></a>
-<a href="https://github.com/besu-eth/besu/pull/11128"><img src="./assets/org-besu.svg" width="144" alt="Ethereum ecosystem — Besu Ethereum client. MERGED PR #11128 in besu-eth/besu."></a>
-<a href="https://github.com/anza-xyz/kit/pull/1971"><img src="./assets/org-anza.svg" width="144" alt="Solana ecosystem — Solana Kit SDK by Anza. MERGED PR #1971 in anza-xyz/kit."></a>
-<a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="144" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
-<a href="https://github.com/kakao/actionbase/pull/505"><img src="./assets/org-kakao.svg" width="144" alt="Kakao — actionbase interaction database. MERGED PR #505 in kakao/actionbase."></a>
-<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="144" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
-<a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="144" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
-<a href="https://github.com/toyota-connected/emb_cli/pull/240"><img src="./assets/org-toyota.svg" width="144" alt="Toyota Connected — emb_cli embedded Linux tooling. MERGED PR #240 in toyota-connected/emb_cli."></a>
-<a href="https://github.com/FHIR/sushi/pull/1635"><img src="./assets/org-fhir.svg" width="144" alt="HL7 FHIR ecosystem — SUSHI compiler. MERGED PR #1635 in FHIR/sushi."></a>
-<a href="https://github.com/rdkit/rdkit/pull/9512"><img src="./assets/org-rdkit.svg" width="144" alt="RDKit — chemistry toolkit. MERGED PR #9512 in rdkit/rdkit."></a>
-<a href="https://github.com/OSC/ondemand/pull/5725"><img src="./assets/org-osc.svg" width="144" alt="Ohio Supercomputer Center — Open OnDemand supercomputing portal. MERGED PR #5725 in OSC/ondemand."></a>
-<a href="https://github.com/rundeck/rundeck/pull/10488"><img src="./assets/org-rundeck.svg" width="144" alt="PagerDuty — Rundeck runbook automation. MERGED PR #10488 in rundeck/rundeck."></a>
-<a href="https://github.com/WorksApplications/sudachi.rs/pull/360"><img src="./assets/org-sudachi.svg" width="144" alt="Works Applications — Sudachi Japanese text analysis. MERGED PR #360 in WorksApplications/sudachi.rs."></a>
-<a href="https://github.com/PowerGridModel/power-grid-model/pull/1547"><img src="./assets/org-pgm.svg" width="144" alt="Linux Foundation energy ecosystem — Power Grid Model / LF Energy. MERGED PR #1547 in PowerGridModel/power-grid-model."></a>
-<a href="https://github.com/dynawo/dyn-grid-compliance-verification/pull/385"><img src="./assets/org-dynawo.svg" width="144" alt="Dynawo / DyCoV — power-grid compliance tools. MERGED PR #385 in dynawo/dyn-grid-compliance-verification."></a>
-<a href="https://github.com/KaotoIO/camel-catalog/pull/130"><img src="./assets/org-kaoto.svg" width="144" alt="Apache Camel ecosystem — Kaoto integration tooling. MERGED PR #130 in KaotoIO/camel-catalog."></a>
+<a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
+<a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
+<a href="https://github.com/sony/nmos-cpp/pull/520"><img src="./assets/org-sony.svg" width="134" alt="Sony — nmos-cpp media networking. MERGED PR #520 in sony/nmos-cpp."></a>
+<a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="134" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
+<a href="https://github.com/mercedes-benz/odxtools/pull/532"><img src="./assets/org-mercedes.svg" width="134" alt="Mercedes-Benz — odxtools automotive diagnostics. MERGED PR #532 in mercedes-benz/odxtools."></a>
+<a href="https://github.com/fosslight/fosslight_util/pull/319"><img src="./assets/org-fosslight.svg" width="134" alt="LG Electronics — FOSSLight Util. MERGED PR #319 in fosslight/fosslight_util."></a>
+<a href="https://github.com/besu-eth/besu/pull/11128"><img src="./assets/org-besu.svg" width="134" alt="Ethereum ecosystem — Besu Ethereum client. MERGED PR #11128 in besu-eth/besu."></a>
+<a href="https://github.com/anza-xyz/kit/pull/1971"><img src="./assets/org-anza.svg" width="134" alt="Solana ecosystem — Solana Kit SDK by Anza. MERGED PR #1971 in anza-xyz/kit."></a>
+<a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="134" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
+<a href="https://github.com/kakao/actionbase/pull/505"><img src="./assets/org-kakao.svg" width="134" alt="Kakao — actionbase interaction database. MERGED PR #505 in kakao/actionbase."></a>
+<a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="134" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
+<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
+<a href="https://github.com/rundeck/rundeck/pull/10488"><img src="./assets/org-rundeck.svg" width="134" alt="PagerDuty — Rundeck runbook automation. MERGED PR #10488 in rundeck/rundeck."></a>
+<a href="https://github.com/FHIR/sushi/pull/1635"><img src="./assets/org-fhir.svg" width="134" alt="HL7 FHIR ecosystem — SUSHI compiler. MERGED PR #1635 in FHIR/sushi."></a>
+<a href="https://github.com/rdkit/rdkit/pull/9512"><img src="./assets/org-rdkit.svg" width="134" alt="RDKit — chemistry toolkit. MERGED PR #9512 in rdkit/rdkit."></a>
+<a href="https://github.com/PowerGridModel/power-grid-model/pull/1547"><img src="./assets/org-pgm.svg" width="134" alt="LF Energy — hosted Power Grid Model. MERGED PR #1547 in PowerGridModel/power-grid-model."></a>
 </p>
 
 <p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 39 direct merges."></a></p>
