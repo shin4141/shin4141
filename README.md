@@ -27,7 +27,12 @@ I repair software boundary failures where systems report the wrong state, retain
 
 **[39 direct upstream merges across 34 independent public repositories](MERGE_PORTFOLIO.md)**
 
-**If your system has one of these failure modes, send me the failing path or reproduction:** [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
+**What would you regret not checking?**
+
+For critical execution, permission, and recovery boundaries, I can offer an independent second perspective—even on a single unresolved issue. I investigate false completion, stale authority, duplicate execution, and broken retries or recovery.
+
+**Available for focused, paid investigations and repairs, including time-sensitive cases subject to availability.** Send a brief description or reproduction to [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com). Scope, timing, and terms are agreed before work begins.
+
 
 ## Failure classes<a id="proof-wall"></a><a id="selected-upstream-repairs"></a>
 
