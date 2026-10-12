@@ -1,5 +1,12 @@
 <p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 39 direct upstream merges across 34 independent public repositories." width="1200"></picture></a></p>
 
+**What would you regret not checking?**
+
+Independent second perspectives on critical software failures: false success, permission boundaries, workflow replay, and recovery. **Focused paid investigations and repairs available**, including time-sensitive cases subject to availability.
+
+**[See verified repair examples and inquiry details ↓](#critical-repair-consulting)** · [Email a failure path or issue](mailto:siriusa.paper@gmail.com)
+
+
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
@@ -27,7 +34,9 @@ I repair software boundary failures where systems report the wrong state, retain
 
 **[39 direct upstream merges across 34 independent public repositories](MERGE_PORTFOLIO.md)**
 
-**What would you regret not checking?**
+<a id="critical-repair-consulting"></a>
+
+### Critical repair consulting — verified cases
 
 If a critical failure path keeps resisting a fix, I may be able to contribute an independent second perspective—even on a single issue.
 
