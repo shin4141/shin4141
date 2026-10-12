@@ -8,6 +8,8 @@ Independent second perspectives on critical software failures: false success, pe
 
 **Documented OpenSSL repair:** [Recursive seed-source stack exhaustion — upstream evidence and scoped consultation](https://shin4141.github.io/critical-repair/openssl/).
 
+**Cross-product repair examples:** [False success, workflow replay and permission boundaries — evidence-backed independent investigation](https://shin4141.github.io/critical-repair/state-recovery/).
+
 
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
