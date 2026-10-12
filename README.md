@@ -1,5 +1,12 @@
 <p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 39 direct upstream merges across 34 independent public repositories." width="1200"></picture></a></p>
 
+**What would you regret not checking?**
+
+Independent second perspectives on critical software failures: false success, permission boundaries, workflow replay, and recovery. **Focused paid investigations and repairs available**, including time-sensitive cases subject to availability.
+
+**[See verified repair examples and inquiry details ↓](#critical-repair-consulting)** · [Email a failure path or issue](mailto:siriusa.paper@gmail.com)
+
+
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
@@ -27,7 +34,23 @@ I repair software boundary failures where systems report the wrong state, retain
 
 **[39 direct upstream merges across 34 independent public repositories](MERGE_PORTFOLIO.md)**
 
-**If your system has one of these failure modes, send me the failing path or reproduction:** [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
+<a id="critical-repair-consulting"></a>
+
+### Critical repair consulting — verified cases
+
+If a critical failure path keeps resisting a fix, I may be able to contribute an independent second perspective—even on a single issue.
+
+I investigate specific failure modes, backed by public upstream repair evidence:
+
+- **False success / state mismatch** — a request reports success before the intended remote state exists ([Microsoft / Power Platform](https://github.com/microsoft/terraform-provider-power-platform/pull/1254)).
+- **Workflow replay / partial writes** — step state and creation events can diverge after interrupted writes ([Vercel Workflow](https://github.com/vercel/workflow/pull/3575)).
+- **Authorization / permission bypass** — configuration changes cross an insufficiently checked permission boundary ([Rundeck](https://github.com/rundeck/rundeck/pull/10488)).
+- **Retry / recovery / lost diagnostics** — a setup failure destroys the active diagnostic path and prevents clean retry ([FOSSLight](https://github.com/fosslight/fosslight_util/pull/319)).
+- **Silent failure / incomplete installation** — required components fail to install while the process continues ([RNAlysis](https://github.com/GuyTeichman/RNAlysis/pull/289)).
+- **Recursive initialization / stack exhaustion** — a recursive seed-source construction exhausts the stack ([OpenSSL, maintainer-adopted](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78)).
+
+**Available for focused, paid investigations and repairs, including time-sensitive cases subject to availability.** Send the failure path, issue link, or minimal reproduction to [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com). Scope, timing, and terms are agreed before work begins.
+
 
 ## Failure classes<a id="proof-wall"></a><a id="selected-upstream-repairs"></a>
 
