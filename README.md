@@ -6,6 +6,8 @@ Independent second perspectives on critical software failures: false success, pe
 
 **[See verified repair examples and inquiry details ↓](#critical-repair-consulting)** · [Email a failure path or issue](mailto:siriusa.paper@gmail.com)
 
+**Client screening:** I accept work only after verifying the requester's identity or organization, authorization to request work on the target system, and written scope, payment, and responsibility terms. Requests that cannot meet these conditions may be declined.
+
 **Documented OpenSSL repair:** [Recursive seed-source stack exhaustion — upstream evidence and scoped consultation](https://shin4141.github.io/critical-repair/openssl/).
 
 **Cross-product repair examples:** [False success, workflow replay and permission boundaries — evidence-backed independent investigation](https://shin4141.github.io/critical-repair/state-recovery/).
