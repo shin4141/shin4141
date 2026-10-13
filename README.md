@@ -48,7 +48,7 @@ If a critical failure path keeps resisting a fix, I may be able to contribute an
 
 I investigate specific failure modes, backed by public upstream repair evidence:
 
-- **False success / state mismatch** — a request reports success before the intended remote state exists ([Microsoft / Power Platform](https://github.com/microsoft/terraform-provider-power-platform/pull/1254)).
+- **Microsoft Power Platform / Terraform — successful apply, unchanged requested settings (HTTP 409).** For Managed Environment disable and Enterprise Policy link/unlink operations, [PR #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) verifies the requested remote state before success, retrying and returning an error if it does not converge. PR author: [Shin (shin4141)](https://github.com/shin4141). [Focused paid investigation and repair inquiries](#critical-repair-consulting) are available under the existing scope, availability and client-screening conditions on this profile.
 - **Workflow replay / partial writes** — step state and creation events can diverge after interrupted writes ([Vercel Workflow](https://github.com/vercel/workflow/pull/3575)).
 - **Authorization / permission bypass** — configuration changes cross an insufficiently checked permission boundary ([Rundeck](https://github.com/rundeck/rundeck/pull/10488)).
 - **Retry / recovery / lost diagnostics** — a setup failure destroys the active diagnostic path and prevents clean retry ([FOSSLight](https://github.com/fosslight/fosslight_util/pull/319)).
