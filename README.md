@@ -159,3 +159,7 @@ The service page includes a sample deliverable.
 Other projects: [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
 
 Contact: [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
+
+- Location: Japan (JST / UTC+9)
+- Availability: Remote collaboration worldwide
+- Response time: Usually within 24 hours
