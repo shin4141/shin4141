@@ -154,6 +154,30 @@ The service page includes a sample deliverable.
 
 **You can commission the design only. Your existing engineers or vendor can implement it internally.**
 
+## What Could My Work Be Worth to Your Business?
+
+Copy the prompt below into your own AI to evaluate how my verified repair work could apply to your business.
+
+```yaml
+Review the verified upstream repair history of:
+https://github.com/shin4141
+
+Based on my company's actual software systems and risks:
+
+1. What failures has this engineer demonstrably repaired?
+2. Which capabilities transfer to my company's problems?
+3. What business losses could similar repairs help avoid?
+4. What evidence supports those conclusions?
+5. What remains unproven or uncertain?
+6. What would be the highest-value way to engage this engineer?
+7. What project or monthly budget could be economically justified?
+
+Verify upstream PRs, commits, reviews, and releases.
+Distinguish actual repairs from hypothetical avoided incidents.
+Do not invent financial losses, incident probabilities, or guarantees.
+Ask for my business context when necessary.
+```
+
 ## Projects and contact
 
 Other projects: [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
