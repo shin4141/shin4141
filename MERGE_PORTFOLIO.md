@@ -1,8 +1,10 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 39 direct upstream merges across 34 independent public repositories.
+This is the canonical detailed ledger for Shin's 43 direct upstream merges across 37 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 39-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 43-merge count.
+
+Verified against GitHub `author:shin4141 is:merged` on 2026-10-15 JST, excluding Shin-owned repositories. Each direct contribution is counted once; multiple PRs in the same upstream repository share one repository count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -10,7 +12,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×7](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-7-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×10](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-10-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×3](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-3-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×8](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-8-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×11](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-11-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×5](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-5-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
 
 ## STATE / TRANSITION ×7
 
@@ -22,7 +24,7 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Mercur #1399](https://github.com/mercurjs/mercur/pull/1399) — terminal payment evidence is counted once so fully captured/refunded collections do not collapse into false partial states → **MERGED**
 - [Vercel Workflow #3575](https://github.com/vercel/workflow/pull/3575) — the step entity and matching `step_created` event now commit atomically, while old partial-write orphans can still be drained without losing replay history → **MERGED**
 
-## DATA / CONTEXT ×7
+## DATA / CONTEXT ×8
 
 - [OSC / Open OnDemand #5725](https://github.com/OSC/ondemand/pull/5725) — an absent Slurm GRES field follows the missing-value display path instead of crashing Active Jobs rendering, after review-driven coercion/display refinement → **MERGED**
 - [PyScrappy #148](https://github.com/mldsveda/PyScrappy/pull/148) — derived-selector context inheritance; maintainer independently verified the repair locally and confirmed the regression coverage → **MERGED**
@@ -31,8 +33,10 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [RDKit #9512](https://github.com/rdkit/rdkit/pull/9512) — safely representable radical state is preserved across the direct InChI adapter so direct identifier generation agrees with the MolBlock path for the reported single-radical case → **MERGED**
 - [Adyen / adyen-node-api-library #1760](https://github.com/Adyen/adyen-node-api-library/pull/1760) — payment infrastructure / public API contract. The public Session Authentication API lacked its generated models in the public `Types` namespace → add the missing export and test it through the package entrypoint → a human reviewer thanked, approved, and merged the patch.
 - [Kakao / actionbase #505](https://github.com/kakao/actionbase/pull/505) — a pooled `EdgeBuffer` was permanently lost when encoding threw before release; returning the borrowed buffer in `finally` preserves the original exception and lets the next encode reuse the pool → **MERGED**. The maintainer confirmed the one-buffer regression fails on `main`, passes with the patch, and invited a follow-up for pool exhaustion.
+- [Amazon Web Services (AWS) / Durable Execution SDK for JavaScript #982](https://github.com/aws/aws-durable-execution-sdk-js/pull/982) — successful batch branches returning `undefined` retain their status, count, and position in result views; real and mock views filter by status instead of dropping defined-status results with undefined values → **MERGED**
 
-## CONFIG / POLICY ×10
+
+## CONFIG / POLICY ×11
 
 - [Rundeck #10488](https://github.com/rundeck/rundeck/pull/10488) — project archive imports that change configuration now require `configure` authorization in addition to `import`, while jobs-only imports retain their existing authorization; GUI and API checks preserve API-version normalization and existing SCM/ACL checks → **MERGED**. The original PR and its [CI preparation PR #10650](https://github.com/rundeck/rundeck/pull/10650) are both merged; the repair reached `main` on 2026-09-25 UTC (2026-09-26 JST) in [commit 4a1d24a](https://github.com/rundeck/rundeck/commit/4a1d24a762b57ec5909028748ee43856a13bb491). Counted once for the same contribution.
 
@@ -49,12 +53,17 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [Dynawo / DyCoV #385](https://github.com/dynawo/dyn-grid-compliance-verification/pull/385) — power-grid compliance tooling / explicit correctness acceptance. A missing parameter set produced an empty XPath result that bypassed absence handling → treat the empty result as missing and add regression coverage → the maintainer stated “the change is correct,” extended Shin’s branch with the adjacent fix and tests, verified 778 passed and `ruff` clean, and merged.
 
 - [Works Applications / sudachi.rs #360](https://github.com/WorksApplications/sudachi.rs/pull/360) — update PyO3 while deliberately dropping Python 3.13t support at the public import boundary, preserving Python 3.14t and regular CPython 3.10+ ABI3 wheels, and keeping the distribution matrix aligned with that support policy → **MERGED**
+- [baserCMS / basercms #4554](https://github.com/baserproject/basercms/pull/4554) — deleting a custom field cannot drop a shared entry-table column, including implicit `id`; ordinary custom-column deletion remains available. This deletion guard does not restore previously lost data → **MERGED**
 
-## RETRY / RECOVERY ×3
+
+## RETRY / RECOVERY ×5
 
 - [FOSSLight / fosslight_util #319](https://github.com/fosslight/fosslight_util/pull/319) — destination-directory setup failure no longer removes the active log handler before the caller can record the error; the merged fix prepares the destination first, preserves the original log for diagnostics, and keeps later relocation retry usable → **MERGED**
 - [Weftmap #178](https://github.com/DataDave-Dev/weftmap/pull/178) — a failed tree-sitter initialization remains a failure for the current caller while clearing the cached promise so a later request can retry → **MERGED**
 - [Python Code Health Analyzer #19](https://github.com/Johnkothapalli/python-code-health-analyzer/pull/19) — malformed cached reports recover as cache misses without swallowing SQLite operational failures, then repopulate with valid analysis state → **MERGED**
+- [Kakao / actionbase #506](https://github.com/kakao/actionbase/pull/506) — an exhausted encoder buffer pool allocates a fallback `EdgeBuffer` instead of throwing at `reset()`; overlapping encodes retain independent buffers while the pooled fast path and release behavior remain unchanged → **MERGED**
+- [Universal Robots / Client Library #588](https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588) — `disconnect()` interrupts the G5 dashboard welcome receive without entering timeout retries, preserving partial bytes and restoring the configured receive timeout. Driver-level prompt shutdown also requires the separate [Driver #2013](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2013) change; the library merge alone does not resolve that combined path → **MERGED**
+
 
 ## INSTALL / COMPLETION ×3
 
@@ -80,6 +89,6 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## UPSTREAM IMPACT / MAINTAINER-ADOPTED RESOLUTION ×1
 
-- [Universal Robots / Universal_Robots_ROS2_Driver #838](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/issues/838) — reproduced the startup hang on current `main`, scoped and implemented [PR #1951](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/1951), and established the retry → SIGINT regression condition. The maintainer later chose an alternative signal-handling implementation in [PR #2006](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2006), then asked Shin to independently validate it. Shin confirmed at fixed HEAD `3d077c0a69c8406bfc6797c961e0321e6285a3cd` that `urscript_interface` exited 0 in 0.214 s and the dashboard PrimaryClient path exited 0 in 0.232 s after SIGINT, with no further retry; genuine startup failure still exited 1, while the same base continued retrying. PR #2006 was then **MERGED** and #838 **CLOSED**. This is tracked as upstream impact, not added to the 37 direct-merge count.
+- [Universal Robots / Universal_Robots_ROS2_Driver #838](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/issues/838) — reproduced the startup hang on current `main`, scoped and implemented [PR #1951](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/1951), and established the retry → SIGINT regression condition. The maintainer later chose an alternative signal-handling implementation in [PR #2006](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2006), then asked Shin to independently validate it. Shin confirmed at fixed HEAD `3d077c0a69c8406bfc6797c961e0321e6285a3cd` that `urscript_interface` exited 0 in 0.214 s and the dashboard PrimaryClient path exited 0 in 0.232 s after SIGINT, with no further retry; genuine startup failure still exited 1, while the same base continued retrying. PR #2006 was then **MERGED** and #838 **CLOSED**. This is tracked as upstream impact, not added to the 43 direct-merge count.
 
-  Remaining unresolved case: if dashboard port 29999 accepts the connection but sends no welcome message, shutdown still took 10.67 s after SIGINT in loopback validation. The in-flight client remains local until `connect()` returns, so `stop()` cannot reach it through `client_`. This residual case was reported in the validation comment on #2006 and remains outside the resolved #838 path.
+  Follow-up to that historical silent-welcome observation: [Client Library #588](https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588) is now a separately counted direct merge. The combined Driver shutdown path still requires [Driver #2013](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2013); the library adoption alone does not establish resolution of that path. The earlier #2006 adoption remains excluded from the direct count.

@@ -1,4 +1,4 @@
-<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 39 direct upstream merges across 34 independent public repositories." width="1200"></picture></a></p>
+<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 43 direct upstream merges across 37 independent public repositories." width="1200"></picture></a></p>
 
 **What would you regret not checking?**
 
@@ -13,32 +13,34 @@ Independent second perspectives on critical software failures: false success, pe
 **Cross-product repair examples:** [False success, workflow replay and permission boundaries — evidence-backed independent investigation](https://shin4141.github.io/critical-repair/state-recovery/).
 
 
+**Selected upstream merges** · [Full portfolio: 43 merges / 37 repositories](MERGE_PORTFOLIO.md)
+
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
+<a href="https://github.com/aws/aws-durable-execution-sdk-js/pull/982"><img src="./assets/org-aws.svg" width="134" alt="Amazon Web Services (AWS) — AWS Durable Execution SDK for JavaScript. MERGED PR #982 in aws/aws-durable-execution-sdk-js."></a>
+<a href="https://github.com/toyota-connected/emb_cli/pull/240"><img src="./assets/org-toyota.svg" width="134" alt="Toyota Connected — emb_cli embedded Linux tooling. MERGED PR #240 in toyota-connected/emb_cli."></a>
 <a href="https://github.com/sony/nmos-cpp/pull/520"><img src="./assets/org-sony.svg" width="134" alt="Sony — nmos-cpp media networking. MERGED PR #520 in sony/nmos-cpp."></a>
-<a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="134" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
 <a href="https://github.com/mercedes-benz/odxtools/pull/532"><img src="./assets/org-mercedes.svg" width="134" alt="Mercedes-Benz — odxtools automotive diagnostics. MERGED PR #532 in mercedes-benz/odxtools."></a>
+<a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="134" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
+<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
 <a href="https://github.com/fosslight/fosslight_util/pull/319"><img src="./assets/org-fosslight.svg" width="134" alt="LG Electronics — FOSSLight Util. MERGED PR #319 in fosslight/fosslight_util."></a>
+<a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="134" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
+<a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="134" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
 <a href="https://github.com/besu-eth/besu/pull/11128"><img src="./assets/org-besu.svg" width="134" alt="Ethereum ecosystem — Besu Ethereum client. MERGED PR #11128 in besu-eth/besu."></a>
 <a href="https://github.com/anza-xyz/kit/pull/1971"><img src="./assets/org-anza.svg" width="134" alt="Solana ecosystem — Solana Kit SDK by Anza. MERGED PR #1971 in anza-xyz/kit."></a>
-<a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="134" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
-<a href="https://github.com/kakao/actionbase/pull/505"><img src="./assets/org-kakao.svg" width="134" alt="Kakao — actionbase interaction database. MERGED PR #505 in kakao/actionbase."></a>
-<a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="134" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
-<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
+<a href="https://github.com/kakao/actionbase/pull/506"><img src="./assets/org-kakao.svg" width="134" alt="Kakao — actionbase interaction database. MERGED PR #506 in kakao/actionbase."></a>
 <a href="https://github.com/rundeck/rundeck/pull/10488"><img src="./assets/org-rundeck.svg" width="134" alt="PagerDuty — Rundeck runbook automation. MERGED PR #10488 in rundeck/rundeck."></a>
-<a href="https://github.com/FHIR/sushi/pull/1635"><img src="./assets/org-fhir.svg" width="134" alt="HL7 FHIR ecosystem — SUSHI compiler. MERGED PR #1635 in FHIR/sushi."></a>
-<a href="https://github.com/rdkit/rdkit/pull/9512"><img src="./assets/org-rdkit.svg" width="134" alt="RDKit — chemistry toolkit. MERGED PR #9512 in rdkit/rdkit."></a>
-<a href="https://github.com/PowerGridModel/power-grid-model/pull/1547"><img src="./assets/org-pgm.svg" width="134" alt="LF Energy — hosted Power Grid Model. MERGED PR #1547 in PowerGridModel/power-grid-model."></a>
+<a href="https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588"><img src="./assets/org-universal-robots.svg" width="134" alt="Universal Robots — Universal Robots Client Library. MERGED PR #588 in UniversalRobots/Universal_Robots_Client_Library."></a>
 </p>
 
-<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 39 direct merges."></a></p>
+<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 43 direct merges."></a></p>
 
 OpenSSL: maintainer-committed adoption, separate from the direct merge count.
 
 I repair software boundary failures where systems report the wrong state, retain the wrong authority, or cannot recover cleanly after failure.
 
-**[39 direct upstream merges across 34 independent public repositories](MERGE_PORTFOLIO.md)**
+**[43 direct upstream merges across 37 independent public repositories](MERGE_PORTFOLIO.md)**
 
 <a id="critical-repair-consulting"></a>
 
@@ -120,8 +122,6 @@ Typical failures I work on:
 - [Siemens / Industrial Experience #2862](https://github.com/siemens/ix/pull/2862) — **OPEN**
 - [Panasonic / Connect / Teams hook #188](https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188) — **OPEN**
 - [Universal Robots / ROS 2 Driver #2013](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2013) — **OPEN**
-- [Universal Robots / Client Library #588](https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588) — **OPEN**
-- [Kakao / actionbase / pool #506](https://github.com/kakao/actionbase/pull/506) — **OPEN**
 - [NAVER / Fixture Monkey #1349](https://github.com/naver/fixture-monkey/pull/1349) — **OPEN**
 - [Samsung / TizenRT #7549](https://github.com/Samsung/TizenRT/pull/7549) — **OPEN**
 - [Metabase / Analytics platform #80783](https://github.com/metabase/metabase/pull/80783) — **OPEN**
