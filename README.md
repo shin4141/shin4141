@@ -4,6 +4,8 @@
 
 Independent second perspectives on critical software failures: false success, permission boundaries, workflow replay, and recovery. **Focused paid investigations and repairs available**, including time-sensitive cases subject to availability.
 
+I identify the conditions that cause a failure, implement a focused fix, and verify it with regression tests.
+
 **[See verified repair examples and inquiry details ↓](#critical-repair-consulting)** · [Email a failure path or issue](mailto:siriusa.paper@gmail.com)
 
 **Client screening:** I accept work only after verifying the requester's identity or organization, authorization to request work on the target system, and written scope, payment, and responsibility terms. Requests that cannot meet these conditions may be declined.
