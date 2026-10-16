@@ -1,10 +1,10 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 43 direct upstream merges across 37 independent public repositories.
+This is the canonical detailed ledger for Shin's 46 direct upstream merges across 40 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 43-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 46-merge count.
 
-Verified against GitHub `author:shin4141 is:merged` on 2026-10-15 JST, excluding Shin-owned repositories. Each direct contribution is counted once; multiple PRs in the same upstream repository share one repository count.
+Verified against GitHub `author:shin4141 is:merged` on 2026-10-16 JST, excluding Shin-owned repositories. Each direct contribution is counted once; multiple PRs in the same upstream repository share one repository count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -12,10 +12,11 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×7](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-7-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×8](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-8-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×11](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-11-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×5](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-5-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×8](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-8-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×8](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-8-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×8](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-8-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×11](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-11-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×6](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-6-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×9](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-9-cf222e?style=flat-square&labelColor=cf222e)
 
-## STATE / TRANSITION ×7
+## STATE / TRANSITION ×8
 
+- [NVIDIA / GPU Operator #3028](https://github.com/NVIDIA/gpu-operator/pull/3028) — GPU-pod selection during driver upgrades includes GPU and MIG limits/requests in native sidecars (`initContainers` with `restartPolicy: Always`), preserving the phase gate, ordinary-container checks, DRA fallback, and regular init-container behavior → **MERGED**
 - [Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — HTTP 409 is accepted as idempotent success only after the requested remote state is observed; otherwise the existing bounded retry continues and unresolved convergence returns an error → **MERGED**
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — stale graph and error invalidation across workspace context changes → **MERGED**
@@ -56,8 +57,9 @@ These are public OSS contributions, not client engagements or evidence of paid c
 - [baserCMS / basercms #4554](https://github.com/baserproject/basercms/pull/4554) — deleting a custom field cannot drop a shared entry-table column, including implicit `id`; ordinary custom-column deletion remains available. This deletion guard does not restore previously lost data → **MERGED**
 
 
-## RETRY / RECOVERY ×5
+## RETRY / RECOVERY ×6
 
+- [Samsung / TizenRT #7549](https://github.com/Samsung/TizenRT/pull/7549) — failed FTL/FTL-NAND initialization releases the child buffers it still owns; buffer-helper failure unwinds partial allocation before returning, and active semaphores are initialized only after enabled buffer allocations succeed. Successful registration retains its resources → **MERGED**
 - [FOSSLight / fosslight_util #319](https://github.com/fosslight/fosslight_util/pull/319) — destination-directory setup failure no longer removes the active log handler before the caller can record the error; the merged fix prepares the destination first, preserves the original log for diagnostics, and keeps later relocation retry usable → **MERGED**
 - [Weftmap #178](https://github.com/DataDave-Dev/weftmap/pull/178) — a failed tree-sitter initialization remains a failure for the current caller while clearing the cached promise so a later request can retry → **MERGED**
 - [Python Code Health Analyzer #19](https://github.com/Johnkothapalli/python-code-health-analyzer/pull/19) — malformed cached reports recover as cache misses without swallowing SQLite operational failures, then repopulate with valid analysis state → **MERGED**
@@ -75,8 +77,9 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 - [Wingfoil #839](https://github.com/wingfoil-io/wingfoil/pull/839) — partial non-blocking FIX/TCP writes; maintainer confirmed the diagnosis and repair before merge → **MERGED**
 
-## NUMERIC / REPRESENTATION ×8
+## NUMERIC / REPRESENTATION ×9
 
+- [Panasonic Connect / Teams hook #188](https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188) — notification text is escaped as JSON string content and substituted in one pass, preserving quotes, backslashes, line breaks, repeated placeholders, and literal `$&` text in Adaptive Cards → **MERGED**
 - [PowerGridModel / power-grid-model #1547](https://github.com/PowerGridModel/power-grid-model/pull/1547) — short-circuit voltage scaling now applies the matching `1/c` source-admittance factor consistently to matrix assembly and source-current output while leaving power-flow and state-estimation behavior unchanged; three review threads were addressed before the patch was merged → **MERGED**
 - [Hyperledger Besu / besu #11128](https://github.com/besu-eth/besu/pull/11128) — ordinary `state-test --json` output omits only the final human summary so JSONL remains machine-readable, with other output modes, result semantics, and exit behavior preserved → **MERGED**
 - [Anza / Solana Kit #1971](https://github.com/anza-xyz/kit/pull/1971) — single-field fixed-size struct codecs preserve literal `fixedSize` while multi-field behavior remains unchanged, with maintainer-requested typetest refinement → **MERGED**
@@ -89,6 +92,6 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## UPSTREAM IMPACT / MAINTAINER-ADOPTED RESOLUTION ×1
 
-- [Universal Robots / Universal_Robots_ROS2_Driver #838](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/issues/838) — reproduced the startup hang on current `main`, scoped and implemented [PR #1951](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/1951), and established the retry → SIGINT regression condition. The maintainer later chose an alternative signal-handling implementation in [PR #2006](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2006), then asked Shin to independently validate it. Shin confirmed at fixed HEAD `3d077c0a69c8406bfc6797c961e0321e6285a3cd` that `urscript_interface` exited 0 in 0.214 s and the dashboard PrimaryClient path exited 0 in 0.232 s after SIGINT, with no further retry; genuine startup failure still exited 1, while the same base continued retrying. PR #2006 was then **MERGED** and #838 **CLOSED**. This is tracked as upstream impact, not added to the 43 direct-merge count.
+- [Universal Robots / Universal_Robots_ROS2_Driver #838](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/issues/838) — reproduced the startup hang on current `main`, scoped and implemented [PR #1951](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/1951), and established the retry → SIGINT regression condition. The maintainer later chose an alternative signal-handling implementation in [PR #2006](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2006), then asked Shin to independently validate it. Shin confirmed at fixed HEAD `3d077c0a69c8406bfc6797c961e0321e6285a3cd` that `urscript_interface` exited 0 in 0.214 s and the dashboard PrimaryClient path exited 0 in 0.232 s after SIGINT, with no further retry; genuine startup failure still exited 1, while the same base continued retrying. PR #2006 was then **MERGED** and #838 **CLOSED**. This is tracked as upstream impact, not added to the 46 direct-merge count.
 
   Follow-up to that historical silent-welcome observation: [Client Library #588](https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588) is now a separately counted direct merge. The combined Driver shutdown path still requires [Driver #2013](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2013); the library adoption alone does not establish resolution of that path. The earlier #2006 adoption remains excluded from the direct count.

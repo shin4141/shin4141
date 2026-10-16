@@ -1,4 +1,4 @@
-<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 43 direct upstream merges across 37 independent public repositories." width="1200"></picture></a></p>
+<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 46 direct upstream merges across 40 independent public repositories." width="1200"></picture></a></p>
 
 **What would you regret not checking?**
 
@@ -15,34 +15,34 @@ I identify the conditions that cause a failure, implement a focused fix, and ver
 **Cross-product repair examples:** [False success, workflow replay and permission boundaries — evidence-backed independent investigation](https://shin4141.github.io/critical-repair/state-recovery/).
 
 
-**Selected upstream merges** · [Full portfolio: 43 merges / 37 repositories](MERGE_PORTFOLIO.md)
+**Selected upstream merges** · [Full portfolio: 46 merges / 40 repositories](MERGE_PORTFOLIO.md)
 
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
+<a href="https://github.com/NVIDIA/gpu-operator/pull/3028"><img src="./assets/org-nvidia.svg" width="134" alt="NVIDIA — GPU Operator. MERGED PR #3028 in NVIDIA/gpu-operator."></a>
 <a href="https://github.com/aws/aws-durable-execution-sdk-js/pull/982"><img src="./assets/org-aws.svg" width="134" alt="Amazon Web Services (AWS) — AWS Durable Execution SDK for JavaScript. MERGED PR #982 in aws/aws-durable-execution-sdk-js."></a>
+<a href="https://github.com/Samsung/TizenRT/pull/7549"><img src="./assets/org-samsung.svg" width="134" alt="Samsung — TizenRT. MERGED PR #7549 in Samsung/TizenRT."></a>
 <a href="https://github.com/toyota-connected/emb_cli/pull/240"><img src="./assets/org-toyota.svg" width="134" alt="Toyota Connected — emb_cli embedded Linux tooling. MERGED PR #240 in toyota-connected/emb_cli."></a>
 <a href="https://github.com/sony/nmos-cpp/pull/520"><img src="./assets/org-sony.svg" width="134" alt="Sony — nmos-cpp media networking. MERGED PR #520 in sony/nmos-cpp."></a>
 <a href="https://github.com/mercedes-benz/odxtools/pull/532"><img src="./assets/org-mercedes.svg" width="134" alt="Mercedes-Benz — odxtools automotive diagnostics. MERGED PR #532 in mercedes-benz/odxtools."></a>
+<a href="https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188"><img src="./assets/org-panasonic.svg" width="134" alt="Panasonic Connect — notify-teams-workflows-webhook. MERGED PR #188 in PanasonicConnect/notify-teams-workflows-webhook."></a>
 <a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="134" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
-<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
 <a href="https://github.com/fosslight/fosslight_util/pull/319"><img src="./assets/org-fosslight.svg" width="134" alt="LG Electronics — FOSSLight Util. MERGED PR #319 in fosslight/fosslight_util."></a>
 <a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="134" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
 <a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="134" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
-<a href="https://github.com/besu-eth/besu/pull/11128"><img src="./assets/org-besu.svg" width="134" alt="Ethereum ecosystem — Besu Ethereum client. MERGED PR #11128 in besu-eth/besu."></a>
-<a href="https://github.com/anza-xyz/kit/pull/1971"><img src="./assets/org-anza.svg" width="134" alt="Solana ecosystem — Solana Kit SDK by Anza. MERGED PR #1971 in anza-xyz/kit."></a>
 <a href="https://github.com/kakao/actionbase/pull/506"><img src="./assets/org-kakao.svg" width="134" alt="Kakao — actionbase interaction database. MERGED PR #506 in kakao/actionbase."></a>
 <a href="https://github.com/rundeck/rundeck/pull/10488"><img src="./assets/org-rundeck.svg" width="134" alt="PagerDuty — Rundeck runbook automation. MERGED PR #10488 in rundeck/rundeck."></a>
 <a href="https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588"><img src="./assets/org-universal-robots.svg" width="134" alt="Universal Robots — Universal Robots Client Library. MERGED PR #588 in UniversalRobots/Universal_Robots_Client_Library."></a>
 </p>
 
-<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 43 direct merges."></a></p>
+<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 46 direct merges."></a></p>
 
 OpenSSL: maintainer-committed adoption, separate from the direct merge count.
 
 I repair software boundary failures where systems report the wrong state, retain the wrong authority, or cannot recover cleanly after failure.
 
-**[43 direct upstream merges across 37 independent public repositories](MERGE_PORTFOLIO.md)**
+**[46 direct upstream merges across 40 independent public repositories](MERGE_PORTFOLIO.md)**
 
 <a id="critical-repair-consulting"></a>
 
@@ -90,6 +90,7 @@ Typical failures I work on:
 
 - **[Kakao / actionbase](https://github.com/kakao/actionbase/pull/505)** — an encoding exception could permanently remove a borrowed buffer from the pool → the merged fix returns it in `finally`, preserving later reuse.
 - **[FOSSLight / fosslight_util](https://github.com/fosslight/fosslight_util/pull/319)** — failed log-destination setup could detach the active file handler before the caller could record the failure → the merged fix prepares the destination first, preserving diagnostics and retryability.
+- **[Samsung / TizenRT](https://github.com/Samsung/TizenRT/pull/7549)** — failed FTL initialization releases buffers owned by the initializer, and read/write-buffer semaphores are initialized after enabled buffer allocations succeed.
 - **[OpenSSL](https://github.com/openssl/openssl/pull/32685)** — recursive RAND seed-source construction exhausted the stack → clean failure in a [maintainer-committed repair](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78).
 
 
@@ -98,6 +99,7 @@ Typical failures I work on:
 <details>
 <summary><a id="representation--boundary-consistency"></a><strong>Representation / boundary consistency</strong></summary>
 
+- **[Panasonic Connect / Teams hook](https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188)** — Adaptive Card JSON preserves quotes, backslashes, line breaks, and literal replacement symbols in notification text through escaped, one-pass placeholder substitution.
 - **[Mercedes-Benz / odxtools](https://github.com/mercedes-benz/odxtools/pull/532)** — length-prefixed diagnostic strings mixed UTF-8 byte counts with a different configured encoding → the merged fix uses one encoding consistently for the prefix and payload.
 - **[Apple / Swift OpenAPI Generator](https://github.com/apple/swift-openapi-generator/pull/939)** — duplicate generated schema names crashed generation → the merged fix emits a deterministic error.
 
@@ -106,33 +108,32 @@ Typical failures I work on:
 <details>
 <summary>Additional upstream evidence</summary>
 
+- **[NVIDIA / GPU Operator](https://github.com/NVIDIA/gpu-operator/pull/3028)** — driver-upgrade GPU-pod detection now includes GPU and MIG resources declared by native sidecars (`initContainers` with `restartPolicy: Always`), while regular init-container behavior remains outside this change.
 - **[ESA / pagmo2](https://github.com/esa/pagmo2/pull/634)** — C++20 stateless lambdas broke BFE test assumptions → the merged tests and docs reflect the language change.
 - **[Hyperledger Besu](https://github.com/besu-eth/besu/pull/11128)** — ordinary `state-test --json` mixed a human summary into JSONL → the merged fix keeps that output machine-readable.
 - **[Toyota Connected / emb_cli](https://github.com/toyota-connected/emb_cli/pull/240)** — packaging staging spawned `chmod` once per mode-bearing file → the merged fix batches destinations by mode within bounded argv chunks while preserving copy/permission order and failure handling.
+- **[Solana ecosystem / Anza Kit](https://github.com/anza-xyz/kit/pull/1971)** — single-field fixed-size struct codecs retain their literal `fixedSize` type, while multi-field behavior stays unchanged.
 
 </details>
 
 [View all upstream contributions →](MERGE_PORTFOLIO.md)
 
 <details>
-<summary><strong>APPROVED / OPEN — pending contributions, not merged</strong></summary>
+<summary><strong>OPEN — pending contributions, not merged</strong></summary>
 
-- [Apache / Jena #4314](https://github.com/apache/jena/pull/4314) — **APPROVED**
-- [NVIDIA / GPU Operator #3028](https://github.com/NVIDIA/gpu-operator/pull/3028) — **OPEN**
+- [Apache / Jena #4314](https://github.com/apache/jena/pull/4314) — **OPEN**
 - [Django / Cookie messages #22085](https://github.com/django/django/pull/22085) — **OPEN**
 - [Adobe / Magento / Magento 2 #41430](https://github.com/magento/magento2/pull/41430) — **OPEN**
 - [Siemens / Industrial Experience #2862](https://github.com/siemens/ix/pull/2862) — **OPEN**
-- [Panasonic / Connect / Teams hook #188](https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188) — **OPEN**
 - [Universal Robots / ROS 2 Driver #2013](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/pull/2013) — **OPEN**
 - [NAVER / Fixture Monkey #1349](https://github.com/naver/fixture-monkey/pull/1349) — **OPEN**
-- [Samsung / TizenRT #7549](https://github.com/Samsung/TizenRT/pull/7549) — **OPEN**
 - [Metabase / Analytics platform #80783](https://github.com/metabase/metabase/pull/80783) — **OPEN**
 - [NASA JPL / Explorer-1 #892](https://github.com/nasa-jpl/explorer-1/pull/892) — **OPEN**
 - [CERN ROOT / Cling #568](https://github.com/root-project/cling/pull/568) — **OPEN**
 - [NII Cloud Ops / nbsearch #76](https://github.com/NII-cloud-operation/nbsearch/pull/76) — **OPEN**
-- [Keycloak / Identity platform #51749](https://github.com/keycloak/keycloak/pull/51749) — **OPEN**
 - [AWS Samples / Customer data lake #330](https://github.com/aws-samples/sample-voice-of-customer-datalake/pull/330) — **OPEN**
 - [Temporal / Deputy / experimental #314](https://github.com/temporalio/deputy/pull/314) — **OPEN**
+
 
 </details>
 
