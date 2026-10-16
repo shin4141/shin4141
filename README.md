@@ -22,13 +22,13 @@ I identify the conditions that cause a failure, implement a focused fix, and ver
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
 <a href="https://github.com/NVIDIA/gpu-operator/pull/3028"><img src="./assets/org-nvidia.svg" width="134" alt="NVIDIA — GPU Operator. MERGED PR #3028 in NVIDIA/gpu-operator."></a>
 <a href="https://github.com/aws/aws-durable-execution-sdk-js/pull/982"><img src="./assets/org-aws.svg" width="134" alt="Amazon Web Services (AWS) — AWS Durable Execution SDK for JavaScript. MERGED PR #982 in aws/aws-durable-execution-sdk-js."></a>
-<a href="https://github.com/Samsung/TizenRT/pull/7549"><img src="./assets/org-samsung.svg" width="134" alt="Samsung — TizenRT. MERGED PR #7549 in Samsung/TizenRT."></a>
+<a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
 <a href="https://github.com/toyota-connected/emb_cli/pull/240"><img src="./assets/org-toyota.svg" width="134" alt="Toyota Connected — emb_cli embedded Linux tooling. MERGED PR #240 in toyota-connected/emb_cli."></a>
 <a href="https://github.com/sony/nmos-cpp/pull/520"><img src="./assets/org-sony.svg" width="134" alt="Sony — nmos-cpp media networking. MERGED PR #520 in sony/nmos-cpp."></a>
 <a href="https://github.com/mercedes-benz/odxtools/pull/532"><img src="./assets/org-mercedes.svg" width="134" alt="Mercedes-Benz — odxtools automotive diagnostics. MERGED PR #532 in mercedes-benz/odxtools."></a>
-<a href="https://github.com/PanasonicConnect/notify-teams-workflows-webhook/pull/188"><img src="./assets/org-panasonic.svg" width="134" alt="Panasonic Connect — notify-teams-workflows-webhook. MERGED PR #188 in PanasonicConnect/notify-teams-workflows-webhook."></a>
+<a href="https://github.com/besu-eth/besu/pull/11128"><img src="./assets/org-besu.svg" width="134" alt="Ethereum ecosystem — Besu Ethereum client. MERGED PR #11128 in besu-eth/besu."></a>
 <a href="https://github.com/usnistgov/macos_security/pull/775"><img src="./assets/org-nist.svg" width="134" alt="NIST — macOS Security Compliance Project. MERGED PR #775 in usnistgov/macos_security."></a>
-<a href="https://github.com/fosslight/fosslight_util/pull/319"><img src="./assets/org-fosslight.svg" width="134" alt="LG Electronics — FOSSLight Util. MERGED PR #319 in fosslight/fosslight_util."></a>
+<a href="https://github.com/anza-xyz/kit/pull/1971"><img src="./assets/org-anza.svg" width="134" alt="Solana ecosystem — Solana Kit SDK by Anza. MERGED PR #1971 in anza-xyz/kit."></a>
 <a href="https://github.com/vercel/workflow/pull/3575"><img src="./assets/org-vercel.svg" width="134" alt="Vercel — Workflow SDK. MERGED PR #3575 in vercel/workflow."></a>
 <a href="https://github.com/Adyen/adyen-node-api-library/pull/1760"><img src="./assets/org-adyen.svg" width="134" alt="Adyen — Node.js payments API library. MERGED PR #1760 in Adyen/adyen-node-api-library."></a>
 <a href="https://github.com/kakao/actionbase/pull/506"><img src="./assets/org-kakao.svg" width="134" alt="Kakao — actionbase interaction database. MERGED PR #506 in kakao/actionbase."></a>
