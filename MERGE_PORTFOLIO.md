@@ -1,10 +1,10 @@
 # Verified Merge Portfolio
 
-This is the canonical detailed ledger for Shin's 46 direct upstream merges across 40 independent public repositories.
+This is the canonical detailed ledger for Shin's 47 direct upstream merges across 41 independent public repositories.
 
-This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 46-merge count.
+This ledger covers direct upstream PR merges only. OpenSSL #32685 remains `Closed`; its maintainer-committed adoption in `master` and same-repair OpenSSL 4.1 cherry-pick are tracked separately in the [profile README](README.md#openssl-adoption-beyond-a-direct-pr-merge) and are not included in or added twice to the 47-merge count.
 
-Verified against GitHub `author:shin4141 is:merged` on 2026-10-16 JST, excluding Shin-owned repositories. Each direct contribution is counted once; multiple PRs in the same upstream repository share one repository count.
+Verified against GitHub `author:shin4141 is:merged` on 2026-10-16 JST, excluding Shin-owned repositories. Forward-only update on 2026-10-22 JST: the fresh `merged:>=2026-10-16` search found [BTCPay Server #7679](https://github.com/btcpayserver/btcpayserver/pull/7679), merged on 2026-10-19 UTC into a previously uncounted upstream repository. This adds one direct merge and one repository; the earlier 46/40 ledger is preserved. Each direct contribution is counted once; multiple PRs in the same upstream repository share one repository count.
 
 These are public OSS contributions, not client engagements or evidence of paid commercial conversion.
 
@@ -12,12 +12,13 @@ These are public OSS contributions, not client engagements or evidence of paid c
 
 ## Boundary coverage
 
-![STATE / TRANSITION ×8](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-8-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×8](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-8-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×11](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-11-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×6](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-6-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×9](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-9-cf222e?style=flat-square&labelColor=cf222e)
+![STATE / TRANSITION ×9](https://img.shields.io/badge/STATE%20%2F%20TRANSITION-9-1f6feb?style=flat-square&labelColor=1f6feb) ![DATA / CONTEXT ×8](https://img.shields.io/badge/DATA%20%2F%20CONTEXT-8-8250df?style=flat-square&labelColor=8250df) ![CONFIG / POLICY ×11](https://img.shields.io/badge/CONFIG%20%2F%20POLICY-11-9a6700?style=flat-square&labelColor=9a6700) ![RETRY / RECOVERY ×6](https://img.shields.io/badge/RETRY%20%2F%20RECOVERY-6-1a7f37?style=flat-square&labelColor=1a7f37) ![INSTALL / COMPLETION ×3](https://img.shields.io/badge/INSTALL%20%2F%20COMPLETION-3-bc4c00?style=flat-square&labelColor=bc4c00) ![TRANSPORT / PARTIAL PROGRESS ×1](https://img.shields.io/badge/TRANSPORT%20%2F%20PARTIAL%20PROGRESS-1-0e7490?style=flat-square&labelColor=0e7490) ![NUMERIC / REPRESENTATION ×9](https://img.shields.io/badge/NUMERIC%20%2F%20REPRESENTATION-9-cf222e?style=flat-square&labelColor=cf222e)
 
-## STATE / TRANSITION ×8
+## STATE / TRANSITION ×9
 
 - [NVIDIA / GPU Operator #3028](https://github.com/NVIDIA/gpu-operator/pull/3028) — GPU-pod selection during driver upgrades includes GPU and MIG limits/requests in native sidecars (`initContainers` with `restartPolicy: Always`), preserving the phase gate, ordinary-container checks, DRA fallback, and regular init-container behavior → **MERGED**
 - [Microsoft / terraform-provider-power-platform #1254](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — HTTP 409 is accepted as idempotent success only after the requested remote state is observed; otherwise the existing bounded retry continues and unresolved convergence returns an error → **MERGED**
+- [BTCPay Server #7679](https://github.com/btcpayserver/btcpayserver/pull/7679) — a missing Lightning payment lookup result leaves a payout with saved proof in progress and retains its payment hash for a later check; confirmed Failed and Complete outcomes, exceptions, and no-proof cases retain their existing behavior → **MERGED** on 2026-10-19 UTC. No real payment was made in the local verification.
 - [Questboard #151](https://github.com/rictaworks/questboard/pull/151) — existing-member invite state and truthful role visibility → **MERGED**
 - [Weftmap #175](https://github.com/DataDave-Dev/weftmap/pull/175) — stale graph and error invalidation across workspace context changes → **MERGED**
 - [makoto2 #56](https://github.com/pooza/makoto2/pull/56) — process-state truth / permission handling; maintainer reproduced the failure and re-verified the repair with real `EACCES` → **MERGED**

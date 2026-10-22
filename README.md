@@ -1,25 +1,33 @@
-<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Fixing failures across software boundaries. Reproduced. Repaired. Reviewed upstream. 46 direct upstream merges across 40 independent public repositories." width="1200"></picture></a></p>
+# I fix critical software failures before they become costly incidents.
 
-**What would you regret not checking?**
+False success, payment-state inconsistencies, authorization boundaries, workflow replay, and recovery failures. I reproduce a bounded failure, make a focused repair, and verify the result with regression tests.
 
-Independent second perspectives on critical software failures: false success, permission boundaries, workflow replay, and recovery. **Focused paid investigations and repairs available**, including time-sensitive cases subject to availability.
+**Public evidence:** [47 direct upstream PR merges across 41 independent public repositories](MERGE_PORTFOLIO.md). OpenSSL's maintainer-committed adoption is shown separately; these OSS results are not client engagements or measured avoided incidents.
 
-I identify the conditions that cause a failure, implement a focused fix, and verify it with regression tests.
+**Focused paid investigations and repairs:** [Email the issue link or a minimal, non-sensitive reproduction](mailto:siriusa.paper@gmail.com). Please do not send credentials, confidential logs, or customer data in an initial inquiry. Before work starts, we agree on requester identity, authority over the target, scope, timing, payment, and responsibility. Availability, including for time-sensitive cases, is confirmed case by case.
 
-**[See verified repair examples and inquiry details ↓](#critical-repair-consulting)** · [Email a failure path or issue](mailto:siriusa.paper@gmail.com)
+## Five repairs that show the work
 
-**Client screening:** I accept work only after verifying the requester's identity or organization, authorization to request work on the target system, and written scope, payment, and responsibility terms. Requests that cannot meet these conditions may be declined.
+This order is an editorial hypothesis about commercial clarity, not a measured ranking of expected contract value.
 
-**Documented OpenSSL repair:** [Recursive seed-source stack exhaustion — upstream evidence and scoped consultation](https://shin4141.github.io/critical-repair/openssl/).
+1. **[Microsoft Power Platform](https://github.com/microsoft/terraform-provider-power-platform/pull/1254) — success must match the requested remote state.** An HTTP 409 could leave the requested setting unchanged while the provider reported success. The merged repair checks the remote state, retries within the existing bound, and reports non-convergence.
+2. **[BTCPay Server](https://github.com/btcpayserver/btcpayserver/pull/7679) — preserve Lightning payment evidence.** When a lookup returns no result for a payout with a saved payment proof, the merged repair keeps the payout in progress and retains its payment hash for a later check. This does not claim a real payment was made or guarantee settlement.
+3. **[OpenSSL](https://github.com/openssl/openssl/pull/32685) — fail cleanly on recursive seed-source initialization.** The scoped repair addresses stack exhaustion and was [committed by maintainers](https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78). It is **maintainer-adopted**, not one of the 47 direct PR merges. [Repair evidence and consultation scope](https://shin4141.github.io/critical-repair/openssl/).
+4. **[NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator/pull/3028) — detect workloads during driver upgrades.** The merged repair includes GPU and MIG resources declared by native sidecars in the GPU-pod decision, while preserving ordinary init-container behavior.
+5. **[Vercel Workflow](https://github.com/vercel/workflow/pull/3575) — keep step state and replay history together.** The merged repair commits step creation and its event atomically, while still allowing old partial-write orphans to be drained.
 
-**Cross-product repair examples:** [False success, workflow replay and permission boundaries — evidence-backed independent investigation](https://shin4141.github.io/critical-repair/state-recovery/).
+[More failure-path examples](https://shin4141.github.io/critical-repair/state-recovery/) · [How a focused engagement works ↓](#critical-repair-consulting) · [Full merge portfolio](MERGE_PORTFOLIO.md)
 
+## More public upstream evidence
 
-**Selected upstream merges** · [Full portfolio: 46 merges / 40 repositories](MERGE_PORTFOLIO.md)
+<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Software boundary repair. 47 direct upstream merges across 41 independent public repositories." width="1200"></picture></a></p>
+
+The links below document accepted public contributions. Organization names identify upstream repositories, not employment, clients, or endorsement. The OpenSSL adoption badge is separate from the direct merge count.
 
 <p><a id="organization-proof-wall"></a><a id="merged-upstream"></a>
 <a href="https://github.com/apple/swift-openapi-generator/pull/939"><img src="./assets/org-apple.svg" width="134" alt="Apple — Swift OpenAPI Generator. MERGED PR #939 in apple/swift-openapi-generator."></a>
 <a href="https://github.com/microsoft/terraform-provider-power-platform/pull/1254"><img src="./assets/org-microsoft.svg" width="134" alt="Microsoft — Power Platform provider. MERGED PR #1254 in microsoft/terraform-provider-power-platform."></a>
+<a href="https://github.com/btcpayserver/btcpayserver/pull/7679"><img src="./assets/org-btcpay.svg" width="134" alt="BTCPay Server — Lightning payout proof. MERGED PR #7679 in btcpayserver/btcpayserver."></a>
 <a href="https://github.com/NVIDIA/gpu-operator/pull/3028"><img src="./assets/org-nvidia.svg" width="134" alt="NVIDIA — GPU Operator. MERGED PR #3028 in NVIDIA/gpu-operator."></a>
 <a href="https://github.com/aws/aws-durable-execution-sdk-js/pull/982"><img src="./assets/org-aws.svg" width="134" alt="Amazon Web Services (AWS) — AWS Durable Execution SDK for JavaScript. MERGED PR #982 in aws/aws-durable-execution-sdk-js."></a>
 <a href="https://github.com/esa/pagmo2/pull/634"><img src="./assets/org-esa.svg" width="134" alt="European Space Agency (ESA) — pagmo2 scientific optimization. MERGED PR #634 in esa/pagmo2."></a>
@@ -36,13 +44,13 @@ I identify the conditions that cause a failure, implement a focused fix, and ver
 <a href="https://github.com/UniversalRobots/Universal_Robots_Client_Library/pull/588"><img src="./assets/org-universal-robots.svg" width="134" alt="Universal Robots — Universal Robots Client Library. MERGED PR #588 in UniversalRobots/Universal_Robots_Client_Library."></a>
 </p>
 
-<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 46 direct merges."></a></p>
+<p><a id="openssl-adoption-beyond-a-direct-pr-merge"></a><a href="https://github.com/openssl/openssl/commit/aeeca5a9e07166183fe323f336c9177a9b524c78"><img src="./assets/org-openssl-adopted.svg" width="144" alt="OpenSSL — MAINTAINER ADOPTED; commit aeeca5a. Excluded from the 47 direct merges."></a></p>
 
 OpenSSL: maintainer-committed adoption, separate from the direct merge count.
 
 I repair software boundary failures where systems report the wrong state, retain the wrong authority, or cannot recover cleanly after failure.
 
-**[46 direct upstream merges across 40 independent public repositories](MERGE_PORTFOLIO.md)**
+**[47 direct upstream merges across 41 independent public repositories](MERGE_PORTFOLIO.md)**
 
 <a id="critical-repair-consulting"></a>
 
@@ -183,7 +191,7 @@ Ask for my business context when necessary.
 
 ## Projects and contact
 
-Other projects: [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
+Other projects: [Decision-OS paper](https://github.com/shin4141/decision-os-paper) · [Decision-OS V13 LoopKit](https://github.com/shin4141/decision-os-v13-loopkit) · [Value-Locked Repository Recovery](https://github.com/shin4141/value-locked-repository-recovery-public) · [AGENTS.md Compactor](https://github.com/shin4141/agents-md-compactor)
 
 Contact: [siriusa.paper@gmail.com](mailto:siriusa.paper@gmail.com)
 
