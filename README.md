@@ -1,3 +1,5 @@
+<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Software boundary repair. 47 direct upstream merges across 41 independent public repositories." width="1200"></picture></a></p>
+
 # I fix critical software failures before they become costly incidents.
 
 False success, payment-state inconsistencies, authorization boundaries, workflow replay, and recovery failures. I reproduce a bounded failure, make a focused repair, and verify the result with regression tests.
@@ -19,8 +21,6 @@ This order is an editorial hypothesis about commercial clarity, not a measured r
 [More failure-path examples](https://shin4141.github.io/critical-repair/state-recovery/) · [How a focused engagement works ↓](#critical-repair-consulting) · [Full merge portfolio](MERGE_PORTFOLIO.md)
 
 ## More public upstream evidence
-
-<p><a href="MERGE_PORTFOLIO.md"><picture><source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg"><img src="./assets/hero.svg" alt="Software boundary repair. 47 direct upstream merges across 41 independent public repositories." width="1200"></picture></a></p>
 
 The links below document accepted public contributions. Organization names identify upstream repositories, not employment, clients, or endorsement. The OpenSSL adoption badge is separate from the direct merge count.
 
